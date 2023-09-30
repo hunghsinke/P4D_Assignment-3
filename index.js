@@ -1,3 +1,3 @@
-/*
-    Paste the code for your one page site below.
-*/
+
+// query select id = 'trees', and change the colour to white 
+document.querySelector("#trees").style.color='white'

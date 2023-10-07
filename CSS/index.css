@@ -10,7 +10,10 @@ html{
 body{
     /* default font size, also equals to 1rem */
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    /* color: white; */
+    overflow-x: hidden;
 }
 
 div, section, span, ul, li, a, header{
@@ -34,6 +37,7 @@ header{
     list-style: none;
     display: inline-block;
     margin: 10px 30px;
+    
 }
 
 #menu li a{
@@ -47,7 +51,15 @@ section{
     float: left;
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    min-height: 400px;
+    /* padding: 100px; */
 }
+
+/* colour palette for thie website */
+/* https://coolors.co/82542f-b18456-8e5a28-030000-61321c */
 
 #home{
    /* background-color: #59405C; */
@@ -58,25 +70,25 @@ section{
 }
 
 #stones{
-     background-color: #B52B65;
+     background-color: #82542f;
 }
 
 #arrange{
-     background-color: #a28089;
+     background-color: #82542f;
 }
 
 #rockArt{
-     background-color: #0049B7;
+     background-color: #b18456;
 }
 #quarry{
-  background-color: #B52B65;
+  background-color: #8e5a28;
 }
 #burials{
   background-color: #a28089;
 }
 
 #contact{
-    background-color:#0049B7;
+    background-color:#61321c;
 }
 
 h1{
@@ -141,11 +153,14 @@ nav{
 .text-box{
     margin-top: 130px;
     max-width: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .text-box h1{
     font-size: 45px;
-    padding-top: 100px;
+   
+    /* text-align: center; */
     margin-bottom: 20px;
     color: #3f51b5;
 }
@@ -160,11 +175,74 @@ nav{
 .user-box img{
     display: block;
     padding-top: 120px;
-    width: 600px;
+    width: 500px;
     /* margin-bottom: -205px; */
 }
 
+.container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+}
 
+.hero{
+    background-color: #99e7ef;
+    /* background-image: url("../P4D_Assignment-3/assets/img/woodprint.jpg"); */
+    color: white ;
+    
 
+}
+#stones{
+    color: white;
+    background-color: #074f57;
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+}
 
+#stones h1{
+    font-size: 2rem;
+}
 
+/* .curve{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #82542f;
+    transform: translate(85%, 60%);
+}
+.curve::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #b18456;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+} */
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wave1{
+    background-image: url('../assets/waves/waves.svg');
+}

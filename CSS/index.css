@@ -232,3 +232,34 @@ nav{
 .yellowBlob{
     background-image: url('../assets/waves/yellowBlob.svg');
 }
+
+.dropdown{
+    position: absolute;
+    width: 500px;
+    opacity: 0;
+    z-index: 2;
+    background: blue;
+    border-top: 2px solie white;
+
+    /* round up the corners */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+   
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+    transform: translateX(-40%);
+
+    transition: opacity .15s ease-out;
+
+}
+
+.has-dropdown:focus-within .dropdown{
+    opacity: 1;
+    pointer-events: auto;
+}

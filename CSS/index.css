@@ -20,6 +20,11 @@ div, section, span, ul, li, a, header{
     box-sizing: border-box;
 }
 
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
 /*css reset*/
 
 header{
@@ -31,6 +36,7 @@ header{
     align-items: center;
     position: fixed;
     z-index: 999;
+
 }
 
 #menu li{
@@ -82,6 +88,7 @@ section{
 }
 #quarry{
   background-color: #8e5a28;
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
 }
 #burials{
   background-color: #a28089;
@@ -206,34 +213,6 @@ nav{
     font-size: 2rem;
 }
 
-/* .curve{
-    position: absolute;
-    height: 225px;
-    width: 100%;
-    bottom: 0;
-}
-
-.curve::before{
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #82542f;
-    transform: translate(85%, 60%);
-}
-.curve::after{
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #b18456;
-    transform: translate(-4%, 40%);
-    z-index: -1;
-} */
 
 .spacer{
     aspect-ratio: 960/300;
@@ -244,5 +223,12 @@ nav{
 }
 
 .wave1{
-    background-image: url('../assets/waves/waves.svg');
+    background-image: url('../assets/waves/waves1.svg');
+}
+
+.wave2{
+    background-image: url('../assets/waves/waves2.svg');
+}
+.yellowBlob{
+    background-image: url('../assets/waves/yellowBlob.svg');
 }

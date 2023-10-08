@@ -183,6 +183,9 @@ nav{
     padding-top: 120px;
     width: 500px;
     /* margin-bottom: -205px; */
+        /* round up the corners */
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 
 .container{

@@ -43,11 +43,10 @@ header{
     list-style: none;
     display: inline-block;
     margin: 10px 30px;
-    
+    position: relative;
 }
 
 #menu li a{
-    color: #3f51b5;
     text-decoration: none;
     font-size: 20px;
 }
@@ -196,21 +195,24 @@ nav{
 }
 
 .hero{
-    background-color: #99e7ef;
-    /* background-image: url("../P4D_Assignment-3/assets/img/woodprint.jpg"); */
-    color: white ;
+    
+    /* background-image: url("../assets/img/woodprint.jpg"); */
+    background-position: center;
+    background-size: cover;
+    color: black ;
     
 
 }
 #stones{
-    color: white;
-    background-color: #074f57;
+    color: black;
+    /* background-color: #074f57; */
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
 }
 
 #stones h1{
     font-size: 2rem;
+    color: black;
 }
 
 
@@ -231,6 +233,9 @@ nav{
 }
 .yellowBlob{
     background-image: url('../assets/waves/yellowBlob.svg');
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .dropdown{
@@ -253,9 +258,8 @@ nav{
     padding: 0.5rem;
    
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
-    transform: translateX(-40%);
-
     transition: opacity .15s ease-out;
+    right: -30px;
 
 }
 

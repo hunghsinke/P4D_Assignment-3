@@ -1,190 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3 - one page site</title>
     <!-- make JS file run after all the html code   -->
-    <script src="JS/index.js" defer></script> 
+    <script src="JS/index.js" defer></script>
     <!-- <script src="../P4D_Assignment-3/JS/boulderAnimation.js" defer></script> -->
+
+    <!-- run jQuery file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
     <!-- p5 JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    
+
     <!-- JS slideshow--glide -->
     <script src="JS/glide.js" defer></script>
     <script src="JS/testing_slides.js" defer></script>
-    
+
 
     <!-- css file link -->
-    <link rel="stylesheet" href="CSS/index.css"> 
-    
+    <link rel="stylesheet" href="CSS/index.css">
+
 
     <!-- glide CSS  -->
-    <link rel="stylesheet" href="CSS/glide.core.css"> 
-    <link rel="stylesheet" href="CSS/glide.theme.css"> 
+    <link rel="stylesheet" href="CSS/glide.core.css">
+    <link rel="stylesheet" href="CSS/glide.theme.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body class="light  ">
-    
-<section id="home">
-    <header>
-        <!-- add a logo here -->
-        <!-- <a href="#"><img src="assets/img/place2.png" alt=""></a> -->
-        <svg width="80" height="80" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="6.5" y="6.5" width="126" height="126" rx="13.5" fill="white" stroke="#DC6C2F" stroke-width="13"/>
-            <path d="M69.8039 111.686C69.8039 111.686 99.5462 81.7022 99.5462 58.9536C99.5462 50.5624 96.4127 42.5149 90.8349 36.5814C85.2571 30.6479 77.692 27.3145 69.8039 27.3145C61.9157 27.3145 54.3506 30.6479 48.7729 36.5814C43.1951 42.5149 40.0615 50.5624 40.0615 58.9536C40.0615 81.7022 69.8039 111.686 69.8039 111.686ZM69.8039 74.7732C65.8598 74.7732 62.0773 73.1065 59.2884 70.1398C56.4995 67.173 54.9327 63.1493 54.9327 58.9536C54.9327 54.758 56.4995 50.7343 59.2884 47.7675C62.0773 44.8008 65.8598 43.134 69.8039 43.134C73.748 43.134 77.5305 44.8008 80.3194 47.7675C83.1083 50.7343 84.6751 54.758 84.6751 58.9536C84.6751 63.1493 83.1083 67.173 80.3194 70.1398C77.5305 73.1065 73.748 74.7732 69.8039 74.7732Z" fill="#DC6C2F"/>
+    <!-- Loading icon -->
+    <!-- Loading square-->
+    <div class="load-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <section id="home">
+        <header>
+            <!-- add a logo here -->
+            <!-- <a href="#"><img src="assets/img/place2.png" alt=""></a> -->
+            <svg width="80" height="80" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6.5" y="6.5" width="126" height="126" rx="13.5" fill="white" stroke="#DC6C2F"
+                    stroke-width="13" />
+                <path
+                    d="M69.8039 111.686C69.8039 111.686 99.5462 81.7022 99.5462 58.9536C99.5462 50.5624 96.4127 42.5149 90.8349 36.5814C85.2571 30.6479 77.692 27.3145 69.8039 27.3145C61.9157 27.3145 54.3506 30.6479 48.7729 36.5814C43.1951 42.5149 40.0615 50.5624 40.0615 58.9536C40.0615 81.7022 69.8039 111.686 69.8039 111.686ZM69.8039 74.7732C65.8598 74.7732 62.0773 73.1065 59.2884 70.1398C56.4995 67.173 54.9327 63.1493 54.9327 58.9536C54.9327 54.758 56.4995 50.7343 59.2884 47.7675C62.0773 44.8008 65.8598 43.134 69.8039 43.134C73.748 43.134 77.5305 44.8008 80.3194 47.7675C83.1083 50.7343 84.6751 54.758 84.6751 58.9536C84.6751 63.1493 83.1083 67.173 80.3194 70.1398C77.5305 73.1065 73.748 74.7732 69.8039 74.7732Z"
+                    fill="#DC6C2F" />
             </svg>
-    <nav class="hero">
-        <ul id="menu" class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#trees">Sacred Trees</a></li>
-            <li><a href="#stones">Stone Implements</a></li>
-            <!-- Want to put the following under Stones and make a drop down menu -->
-            <!-- <li><a href="#arrange">Stone Arrangements</a></li>
+            <nav class="hero">
+                <ul id="menu" class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trees">Sacred Trees</a></li>
+                    <li><a href="#stones">Stone Implements</a></li>
+                    <!-- Want to put the following under Stones and make a drop down menu -->
+                    <!-- <li><a href="#arrange">Stone Arrangements</a></li>
             <li><a href="#rockArt">Rock Shelters and Rockart Sites</a></li>
             <li><a href="#quarry">Aboriginal Quarry Sites</a></li> -->
 
-            <li><a href="#burials">Aboriginal Burials</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            
-            <!-- Dropdown -->
-            <li class="nav-item has-dropdown">
-                <a href="#">Theme</a>
-                <ul class="dropdown">
-                <li class="dropdown-item">
-                    <a id="light" href="#">light</a>
-                </li>
-                <li class="dropdown-item">
-                    <a id="dark" href="#">dark</a>
-                </li>
-                <li class="dropdown-item">
-                    <a id="solar" href="#">solarise</a>
-                </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-   
+                    <li><a href="#burials">Aboriginal Burials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
 
-    </header>
-    <!-- heading text and style here -->
-    <div class="flex">
-    <div class="text-box">
-        <div class="container">
-            <h1><strong>Aboriginal Places in the ACT</strong></h1>
-            
-        </div>
-          <!-- Source_pexels-daniel-mortonjones-14406697 (royalty free) -->
-        <!-- <div class="home-bg">
+                    <!-- Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Theme</a>
+                        <ul class="dropdown">
+                            <li class="dropdown-item">
+                                <a id="light" href="#">light</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a id="dark" href="#">dark</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a id="solar" href="#">solarise</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+        <!-- heading text and style here -->
+        <div class="flex">
+            <div class="text-box">
+                <div class="container">
+                    <h1><strong>Aboriginal Places in the ACT</strong></h1>
+
+                </div>
+                <!-- Source_pexels-daniel-mortonjones-14406697 (royalty free) -->
+                <!-- <div class="home-bg">
             <img src="assets/img/Brindabella Mountain Range.jpg" alt="">
         </div> -->
-    </div> 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi vel corporis deleniti consequatur incidunt assumenda doloremque velit, illo atque unde non similique fugit cupiditate voluptatem ad aliquid rerum aspernatur distinctio.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi vel corporis deleniti consequatur
+                incidunt assumenda doloremque velit, illo atque unde non similique fugit cupiditate voluptatem ad
+                aliquid rerum aspernatur distinctio.</p>
 
-   </div>
-    
-    <!-- <div class="user-box">
+        </div>
+
+        <!-- <div class="user-box">
         <img src="assets/img/woodprint.jpg" alt="">
         
     </div>  -->
 
-   
 
-    
-    <!-- Source_pexels-daniel-mortonjones-9114670 (royalty free) -->
-    <!-- <div>
+
+
+        <!-- Source_pexels-daniel-mortonjones-9114670 (royalty free) -->
+        <!-- <div>
         <img src="assets/img/snow covered mountain.jpg" alt="">
     </div> -->
-    
 
-</section>
 
-<!-- testing glide library  -->
-<div class="wrap">
-    <div class="glide multi">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-                <img class="glide__slide wrap" src="assets/img/woodprint.jpg">
-            </li>
-            <li class="glide__slide">
-                <img class="glide__slide" src="assets/img/pond.jpg">
-            </li>
-            <li class="glide__slide">
-                <img class="glide__slide" src="assets/img/uluru.jpg">
-            </li>
-          </ul>
+    </section>
+
+    <!-- testing glide library  -->
+    <div class="wrap">
+        <div class="glide multi">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img class="glide__slide wrap" src="assets/img/woodprint.jpg">
+                    </li>
+                    <li class="glide__slide">
+                        <img class="glide__slide" src="assets/img/pond.jpg">
+                    </li>
+                    <li class="glide__slide">
+                        <img class="glide__slide" src="assets/img/uluru.jpg">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<main>
-    <section id="trees">
-        
-        <!-- src: https://www.videezy.com/nature/12390-vertical-panning-shot-of-trunk-with-magical-forest-on-background-in-4k
+    <main>
+        <section id="trees">
+
+            <!-- src: https://www.videezy.com/nature/12390-vertical-panning-shot-of-trunk-with-magical-forest-on-background-in-4k
             Free Stock Footage by <a target="_blank" href="http://www.videezy.com/">Videezy</a> -->
-        <video id="video-background" playsinline autoplay loop muted poster>
-            <!-- works on Safari -->
-            <source src="assets/video/Forest.mp4" type="video/mp4"> 
-            <!-- works on chrome and firefox, I have transcoded to .webm file in assets/video -->
-            <source src="assets/video/Forest.webm" type="video/webm">
-            
-        </video>
-        <div class="text-overlay" >
-            <h1>Sacred Trees</h1>
-            <p>Culturally, scarred trees were created when
-                Aboriginal people removed bark for a
-                variety of purposes such as making canoes,
-                shields and containers.</p>
-        </div>
-    </section>
-    <section id="stones">
-        <div class="spacer greenbg">
-            <h1>Stones Implements</h1>
-                <!-- <div id="boulder-animation-container"></div> -->
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis eveniet fugit non nihil!</p>
-        </div>
-    </section>
-    <section id="arrange" class=" card">
-        
-        <div class="card-body card-flex">
-            <h1 class="card-title">Stone Arrangements</h1>
-            <p class="card-subtitle">This is the subtitle</p>
-            <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis eveniet fugit non nihil!</p>
-            <button class="card-btn">Read More</button>
-        </div>
-        
-        <!-- add curve -->
-        
-    </section>
-    <section id="rockArt">
-        <div class="spacer wave2">
-            <h1>This is RockArt</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis eveniet fugit non nihil!</p>
-        </div>
-    </section>
-    <section id="quarry">
-        <h1>This is quarry</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis eveniet fugit non nihil!</p>
-    </section>
-    <section id="burials">
-        <h1>Aborginal Burrials</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis eveniet fugit non nihil!</p>
-    </section>
-    <section id="contact">
-        <h1>Contacts</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis eveniet fugit non nihil!</p>
-    </section>
-</main>
+            <video id="video-background" playsinline autoplay loop muted poster>
+                <!-- works on Safari -->
+                <source src="assets/video/Forest.mp4" type="video/mp4">
+                <!-- works on chrome and firefox, I have transcoded to .webm file in assets/video -->
+                <source src="assets/video/Forest.webm" type="video/webm">
 
-<footer >
-    <!-- <h2>Footer</h2> -->
-</footer>
+            </video>
+            <div class="text-overlay">
+                <h1>Sacred Trees</h1>
+                <p>Culturally, scarred trees were created when
+                    Aboriginal people removed bark for a
+                    variety of purposes such as making canoes,
+                    shields and containers.</p>
+            </div>
+        </section>
+        <section id="stones">
+            <div class="spacer greenbg">
+                <h1>Stones Implements</h1>
+                <!-- <div id="boulder-animation-container"></div> -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
+                    libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
+                    eveniet fugit non nihil!</p>
+            </div>
+        </section>
+        <section id="arrange" class=" card">
+
+            <div class="card-body card-flex">
+                <h1 class="card-title">Stone Arrangements</h1>
+                <p class="card-subtitle">This is the subtitle</p>
+                <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum
+                    labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque
+                    quia provident nobis eveniet fugit non nihil!</p>
+                <button class="card-btn">Read More</button>
+            </div>
+
+            <!-- add curve -->
+
+        </section>
+        <section id="rockArt">
+            <div class="spacer wave2">
+                <h1>This is RockArt</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
+                    libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
+                    eveniet fugit non nihil!</p>
+            </div>
+        </section>
+        <section id="quarry">
+            <h1>This is quarry</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
+                libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
+                eveniet fugit non nihil!</p>
+        </section>
+        <section id="burials">
+            <h1>Aborginal Burrials</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
+                libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
+                eveniet fugit non nihil!</p>
+        </section>
+        <section id="contact">
+            <h1>Contacts</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
+                libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
+                eveniet fugit non nihil!</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- <h2>Footer</h2> -->
+    </footer>
+    <!-- JQuery code to load the square icon and hide when the website is loaded -->
+    <script>
+        $(window).on("load", function () {
+            $(".load-wrapper").fadeOut("slow")
+        });
+    </script>
+
 </body>
+
 </html>

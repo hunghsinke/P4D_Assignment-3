@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     /* default font size, also equals to 1rem */
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
@@ -16,13 +16,19 @@ body{
     overflow-x: hidden;
     color: var(--text);
     background: var(--bg);
-    
+
     /* let bg colour change before text colour to create a cool offset effect */
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
-    
+
 }
 
-div, section, span, ul, li, a, header{
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
     box-sizing: border-box;
 }
 
@@ -33,7 +39,7 @@ a {
 
 /*css reset*/
 
-header{
+header {
     width: 100%;
     /* height: 100vh; */
     display: flex;
@@ -45,19 +51,19 @@ header{
 
 }
 
-#menu li{
+#menu li {
     list-style: none;
     display: inline-block;
     margin: 10px 30px;
     position: relative;
 }
 
-#menu li a{
+#menu li a {
     text-decoration: none;
     font-size: 20px;
 }
 
-.nav-links li::after{
+.nav-links li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -67,11 +73,11 @@ header{
     transition: 0.5s;
 }
 
-.nav-links li:hover::after{
-    width: 100% ;
+.nav-links li:hover::after {
+    width: 100%;
 }
 
-section{
+section {
     width: 100%;
     float: left;
     height: 100vh;
@@ -86,53 +92,142 @@ section{
 /* colour palette for thie website */
 /* https://coolors.co/82542f-b18456-8e5a28-030000-61321c */
 
-#home{
-   /* background-color: #59405C; */
+#home {
+    /* background-color: #59405C; */
 }
 
-#trees{
+#trees {
 
     position: relative;
 }
 
-#stones{
-     background-color: #82542f;
+#stones {
+    background-color: #82542f;
 }
 
-#arrange{
-     background-color: #82542f;
+#arrange {
+    background-color: #82542f;
 }
 
-#rockArt{
-     background-color: #b18456;
-}
-#quarry{
-  background-color: #8e5a28;
-  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-}
-#burials{
-  background-color: #a28089;
+#rockArt {
+    background-color: #b18456;
 }
 
-#contact{
-    background-color:#61321c;
+#quarry {
+    background-color: #8e5a28;
+    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
 }
 
-h1{
+#burials {
+    background-color: #a28089;
+}
+
+#contact {
+    background-color: #61321c;
+}
+
+h1 {
     /* position: absolute;
     top: 50%;
     left: 50%; */
     /* transform: translate(-50%, -50%); */
     color: #fff;
     font-size: 3rem;
-    font-weight: bold; 
+    font-weight: bold;
 }
-nav{
+
+nav {
     z-index: 100;
     position: relative;
-    
+
 }
-.card{
+
+/* ************************************************** */
+/* the loading page before the website is loaded  */
+
+/* body, html {
+    height: 100%;
+    text-align: center;
+}
+
+body {
+  background-color: #242F3F;
+}  */
+
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1f3d4738;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+/* ************************************************** */
+.card {
     /* width: 320px;
     height: 500px; */
     border-radius: 20px;
@@ -145,7 +240,7 @@ nav{
     background-position: center;
 }
 
-.card-body{
+.card-body {
     width: 100%;
     height: 100%;
     top: 0;
@@ -157,32 +252,38 @@ nav{
     color: #fff;
     padding: 30px;
 }
-.card:hover .card-body{
+
+.card:hover .card-body {
     right: 0;
 }
-.card-flex{
+
+.card-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 2s;
+    transition: 2s ease;
 }
-.card-title{
+
+.card-title {
     text-transform: uppercase;
     font-size: 50px;
 
 }
-.card-subtitle{
+
+.card-subtitle {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 500;
 }
-.card-info{
+
+.card-info {
     font-size: 16px;
     line-height: 25px;
     margin: 40px 0;
     font-weight: 400;
 }
-.card-btn{
+
+.card-btn {
     color: #1f3d47;
     background: #8fabba;
     padding: 10px 20px;
@@ -196,7 +297,7 @@ nav{
 }
 
 /* for embedded video background */
-#video-background{
+#video-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -204,11 +305,13 @@ nav{
     /* transform: translate(-50%,-50%);  */
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures video covers entire viewport */
-    z-index: -1; /* Place the video behind other content */
-  }
+    object-fit: cover;
+    /* Ensures video covers entire viewport */
+    z-index: -1;
+    /* Place the video behind other content */
+}
 
-  .text-overlay {
+.text-overlay {
     /* flex: 1; */
     /* padding: 20px; */
     /* text-align: center; */
@@ -224,22 +327,23 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(119, 108, 108, 0.5); /* Semi-transparent background */
+    background-color: rgba(119, 108, 108, 0.5);
+    /* Semi-transparent background */
     color: #fff;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
 }
 
-.text-overlay h1{
+.text-overlay h1 {
     font-size: 2rem;
 }
 
-.text-overlay p{
+.text-overlay p {
     font-size: 1.2rem;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -248,7 +352,8 @@ nav{
     gap: 2rem;
     padding: 0 5%;
 }
-.text-box{
+
+.text-box {
     /* margin-top: 130px;
     max-width: 600px; */
     padding-top: 200px;
@@ -259,22 +364,23 @@ nav{
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%); */
-   text-align: center;
-   background-image: url("../assets/img/Brindabella Mountain Range.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
- 
+    text-align: center;
+    background-image: url("../assets/img/Brindabella Mountain Range.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
-.text-box h1{
+.text-box h1 {
     font-size: 45px;
-   
+
     /* text-align: center; */
     margin-bottom: 20px;
     color: #548057;
 }
-.user-box{
+
+.user-box {
     /* background-color: #d9e0ff; */
     position: absolute;
     top: 0;
@@ -282,48 +388,49 @@ nav{
     z-index: 1;
 }
 
-.user-box img{
+.user-box img {
     display: block;
     padding-top: 120px;
     width: 500px;
     /* margin-bottom: -205px; */
-        /* round up the corners */
+    /* round up the corners */
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
 }
 
-.container{
+.container {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
-   
+
 }
 
-.hero{
-    
+.hero {
+
     /* background-image: url("../assets/img/woodprint.jpg"); */
     background-position: center;
     background-size: cover;
-    color: black ;
-    
+    color: black;
+
 
 }
-#stones{
+
+#stones {
     color: black;
     /* background-color: #074f57; */
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
 }
 
-#stones h1{
+#stones h1 {
     font-size: 2rem;
     color: black;
 }
 
 
-.spacer{
+.spacer {
     aspect-ratio: 960/300;
     width: 100%;
     height: 100%;
@@ -332,22 +439,23 @@ nav{
     background-size: cover;
 }
 
-.wave1{
+.wave1 {
     background-image: url('../assets/waves/waves1.svg');
 }
 
-.wave2{
+.wave2 {
     background-image: url('../assets/waves/wave_test.png');
     background-size: cover;
 }
-.greenbg{
+
+.greenbg {
     background-image: url('../assets/img/greenbg.svg');
     background-position: center;
     background-size: cover;
     z-index: 100;
 }
 
-.dropdown{
+.dropdown {
     position: absolute;
     width: 500px;
     opacity: 0;
@@ -366,7 +474,7 @@ nav{
     height: 3rem;
     margin-top: 2rem;
     padding: 0.5rem;
-   
+
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
     transition: opacity .15s ease-out;
     right: -30px;
@@ -376,13 +484,13 @@ nav{
 /* When you click on the link it creates focus on that link
 which will cause the drop down to fade in. 
 If we click outside of it, it loses focus and fade out.  */
-.has-dropdown:focus-within .dropdown{
+.has-dropdown:focus-within .dropdown {
     opacity: 1;
     pointer-events: auto;
 }
 
 /* create circles before each themes to show what they are  */
-.dropdown-item a{
+.dropdown-item a {
     width: 100%;
     height: 100%;
     size: 0.7rem;
@@ -391,7 +499,7 @@ If we click outside of it, it loses focus and fade out.  */
 }
 
 /* before add content before the link text */
-.dropdown-item a::before{
+.dropdown-item a::before {
     content: " ";
     border: 2px solid white;
     border-radius: 50%;
@@ -406,8 +514,8 @@ If we click outside of it, it loses focus and fade out.  */
 }
 
 /* theme */
-:root{
-    --gray0:#f8f8f8;
+:root {
+    --gray0: #f8f8f8;
     --gray1: #dbe1e8;
     --gray2: #bcbecd;
     --gray3: #6c7983;
@@ -419,28 +527,28 @@ If we click outside of it, it loses focus and fade out.  */
     --yellow: #fff565;
 }
 
-.light{
+.light {
     --bg: var(--gray0);
     --bg-nav: linear-gradiant(to right, var(--gray1), var(--gray3));
     --bg-dropdown: var(--gray0);
     --text: var(--gray6);
     --border-colr: var(--blue);
-    --bg-solar: var(--yellow); 
+    --bg-solar: var(--yellow);
 
 }
 
-.dark{
+.dark {
     --bg: var(--gray5);
     --bg-nav: linear-gradiant(to right, var(--gray5), var(--gray6));
     --bg-dropdown: var(--gray6);
     --text: var(--gray0);
     --border-colr: var(--purple);
-    --bg-solar: var(--blue); 
+    --bg-solar: var(--blue);
 }
 
-.solar{
+.solar {
 
-    --gray0:#fbffd4;
+    --gray0: #fbffd4;
     --gray1: #f7f8d0;
     --gray2: #b6f880;
     --gray3: #5ec72d;
@@ -466,19 +574,20 @@ If we click outside of it, it loses focus and fade out.  */
 .wrap {
     max-width: 900px;
     margin: 0 auto;
-  }
+}
+
 .glide__slide {
     border: 1px solid black;
     line-height: 100px;
     margin: 0;
     text-align: center;
-  }
+}
 
-.home-bg{
+.home-bg {
     img {
         max-width: 100%;
         height: auto;
-      }
+    }
 }
 
 /* Footer */
@@ -487,20 +596,22 @@ If we click outside of it, it loses focus and fade out.  */
     text-align: center;
     /* background: #ddd; */
     margin-top: 20px;
-  }
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
     }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
     .topnav a {
         float: none;
         width: 100%;
     }
-  }
+}

@@ -19,6 +19,7 @@ body{
     
     /* let bg colour change before text colour to create a cool offset effect */
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    
 }
 
 div, section, span, ul, li, a, header{
@@ -277,11 +278,11 @@ nav{
     background-image: url('../assets/waves/wave_test.png');
     background-size: cover;
 }
-.yellowBlob{
-    background-image: url('../assets/waves/yellowBlob.svg');
+.greenbg{
+    background-image: url('../assets/img/greenbg.svg');
     background-position: center;
     background-size: cover;
-    
+    z-index: 100;
 }
 
 .dropdown{

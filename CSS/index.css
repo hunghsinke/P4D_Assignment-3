@@ -173,10 +173,10 @@ nav{
    
     /* text-align: center; */
     margin-bottom: 20px;
-    color: #3f51b5;
+    color: #548057;
 }
 .user-box{
-    background-color: #d9e0ff;
+    /* background-color: #d9e0ff; */
     position: absolute;
     top: 0;
     right: 12%;
@@ -227,6 +227,7 @@ nav{
 .spacer{
     aspect-ratio: 960/300;
     width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -237,7 +238,8 @@ nav{
 }
 
 .wave2{
-    background-image: url('../assets/waves/waves2.svg');
+    background-image: url('../assets/waves/wave_test.png');
+    background-size: cover;
 }
 .yellowBlob{
     background-image: url('../assets/waves/yellowBlob.svg');

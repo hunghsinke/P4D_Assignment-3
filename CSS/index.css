@@ -56,6 +56,20 @@ header{
     font-size: 20px;
 }
 
+.nav-links li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links li:hover::after{
+    width: 100% ;
+}
+
 section{
     width: 100%;
     float: left;
@@ -76,7 +90,8 @@ section{
 }
 
 #trees{
-     /* background-color: #ED6663; */
+
+    position: relative;
 }
 
 #stones{
@@ -120,8 +135,8 @@ nav{
 /* for embedded video background */
 #video-background{
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    top: 0;
+    left: 0;
     /* bring the video to the centre */
     /* transform: translate(-50%,-50%);  */
     width: 100%;
@@ -161,11 +176,32 @@ nav{
     font-size: 1.2rem;
 }
 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    gap: 2rem;
+    padding: 0 5%;
+}
 .text-box{
-    margin-top: 130px;
-    max-width: 600px;
+    /* margin-top: 130px;
+    max-width: 600px; */
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 100%;
+
+    /* position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); */
+   text-align: center;
+   background-image: url("../assets/img/Brindabella Mountain Range.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+ 
 }
 
 .text-box h1{
@@ -373,4 +409,35 @@ If we click outside of it, it loses focus and fade out.  */
     line-height: 100px;
     margin: 0;
     text-align: center;
+  }
+
+.home-bg{
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    /* background: #ddd; */
+    margin-top: 20px;
+  }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
   }

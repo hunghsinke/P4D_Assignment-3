@@ -363,3 +363,14 @@ If we click outside of it, it loses focus and fade out.  */
     background: var(--bg-solar);
 }
 
+/* glide css */
+.wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+.glide__slide {
+    border: 1px solid black;
+    line-height: 100px;
+    margin: 0;
+    text-align: center;
+  }

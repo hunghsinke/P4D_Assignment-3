@@ -38,10 +38,10 @@
 
 </head>
 
-<body class="light  ">
+<body class="light">
     <!-- Loading icon -->
     <!-- Loading square-->
-    <div class="load-wrapper">
+    <div class="load-wrapper blue">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <section id="home">
@@ -212,13 +212,20 @@
         </section>
     </main>
 
-    <footer>
+    <footer >
         <!-- <h2>Footer</h2> -->
+
     </footer>
     <!-- JQuery code to load the square icon and hide when the website is loaded -->
     <script>
         $(window).on("load", function () {
-            $(".load-wrapper").fadeOut("slow")
+            // $(".light").removeClass(".light").addClass(".blue").fadeOut("slow")
+            // $("body").fadeOut("slow").removeClass("blue").addClass("light").fadeIn("slow")
+            // setTimeout(function(){
+            // },2000)
+            
+            $(".load-wrapper").delay(800).fadeOut(2000, "linear")
+
         });
     </script>
 

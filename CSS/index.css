@@ -7,6 +7,11 @@ html {
     scroll-behavior: smooth;
 }
 
+
+.blue{
+    background-color: blue;
+
+}
 body {
     /* default font size, also equals to 1rem */
     font-size: 18px;
@@ -16,6 +21,8 @@ body {
     overflow-x: hidden;
     color: var(--text);
     background: var(--bg);
+    position: relative;
+    z-index: 0;
 
     /* let bg colour change before text colour to create a cool offset effect */
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
@@ -47,7 +54,7 @@ header {
     padding: 20px 50px;
     align-items: center;
     position: fixed;
-    z-index: 999;
+    z-index: 1;
 
 }
 
@@ -154,16 +161,20 @@ body {
   background-color: #242F3F;
 }  */
 
-.loader-wrapper{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.load-wrapper{
+   
+    position: fixed;
     top: 0;
-    left: 0;
-    background-color: #1f3d4738;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    /* background-color: #1f3d4738; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .loader {
     display: inline-block;

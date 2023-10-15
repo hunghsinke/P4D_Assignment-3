@@ -45,7 +45,7 @@
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <section id="home">
-        <header>
+        <header class="main-header">
             <!-- add a logo here -->
             <!-- <a href="#"><img src="assets/img/place2.png" alt=""></a> -->
             <svg width="80" height="80" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,17 +111,12 @@
         
     </div>  -->
 
-
-
-
         <!-- Source_pexels-daniel-mortonjones-9114670 (royalty free) -->
         <!-- <div>
         <img src="assets/img/snow covered mountain.jpg" alt="">
     </div> -->
 
-
     </section>
-
     <!-- testing glide library  -->
     <div class="wrap">
         <div class="glide multi">
@@ -212,18 +207,36 @@
         </section>
     </main>
 
-    <footer >
-        <!-- <h2>Footer</h2> -->
-
+    <footer class="main-footer">
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="assets/img/twitter.svg">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="assets/img/facebook.svg">
+                            Facebook
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     <!-- JQuery code to load the square icon and hide when the website is loaded -->
     <script>
         $(window).on("load", function () {
+            //another way to write this, easier to understand but more lines of code 
             // $(".light").removeClass(".light").addClass(".blue").fadeOut("slow")
             // $("body").fadeOut("slow").removeClass("blue").addClass("light").fadeIn("slow")
             // setTimeout(function(){
             // },2000)
             
+            //easier way to write this 
             $(".load-wrapper").delay(800).fadeOut(2000, "linear")
 
         });

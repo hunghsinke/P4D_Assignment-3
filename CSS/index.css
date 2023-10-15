@@ -46,7 +46,8 @@ a {
 
 /*css reset*/
 /* header & footer element */
-.main-header, .main-footer {
+.main-header,
+.main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +62,8 @@ a {
 .main-footer {
     width: 100%;
     height: 70px;
-    background-color: #61321c;
+    background-color: #22401f;
+    color: #fff;
     /*not working for some reason*/
     /* z-index: 20; */
     font-weight: bold;
@@ -73,6 +75,8 @@ a {
     padding: 20px 50px;
     position: fixed;
     z-index: 1;
+    background-color: #22401f;
+    opacity: 1;
 }
 
 .footer-nav ul {
@@ -80,13 +84,13 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
-} 
+}
 
 .footer-nav a {
     color: inherit;
     text-decoration: none;
     padding: 1rem;
-} 
+}
 
 #menu li {
     list-style: none;
@@ -319,7 +323,7 @@ nav {
 
 .card-btn {
     color: #1f3d47;
-    background: #8fabba;
+    background: #C7FCCE;
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: capitalize;
@@ -329,6 +333,101 @@ nav {
     cursor: pointer;
     width: 120px;
 }
+
+/* contact page */
+/* source code: https://github.com/WebDevSimplified/Spotify-Landing-Page-Redesign/blob/master/join.html */
+.contact-btn {
+    color: #fff;
+    background-color: #22401f;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #44A04F;
+}
+
+.contact-btn:focus {
+    background-color: #548057;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.contact-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.accent-text {
+    color: #BC3A80;
+}
+
+.contact-form {
+    background-color: #202027;
+    width: 50vw;
+    max-width: 50%;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+
+.text-color {
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.input-group input {
+    outline: none;
+    background: none;
+    border: 1px solid #2E3852;
+    font-size: 1em;
+    padding: .5em;
+    color: inherit;
+    border-radius: 5px;
+}
+
+.input-group input:focus {
+    border-color: #596da0;
+}
+
+@media (max-width: 900px) {
+    .join-main-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .join-form {
+        width: 80vw;
+        max-width: inherit;
+        margin: 2rem 0;
+    }
+}
+
+
 
 /* for embedded video background */
 #video-background {
@@ -452,9 +551,7 @@ nav {
     /* background-image: url("../assets/img/woodprint.jpg"); */
     background-position: center;
     background-size: cover;
-    color: black;
-
-
+    color: #fff;
 }
 
 #stones {

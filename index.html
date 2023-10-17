@@ -85,8 +85,6 @@
                     </li>
                 </ul>
             </nav>
-
-
         </header>
         <!-- heading text and style here -->
         <div class="flex">
@@ -116,25 +114,19 @@
         <img src="assets/img/snow covered mountain.jpg" alt="">
     </div> -->
 
-    </section>
-    <!-- testing glide library  -->
-    <div class="wrap">
-        <div class="glide multi">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <img class="glide__slide wrap" src="assets/img/woodprint.jpg">
-                    </li>
-                    <li class="glide__slide">
-                        <img class="glide__slide" src="assets/img/pond.jpg">
-                    </li>
-                    <li class="glide__slide">
-                        <img class="glide__slide" src="assets/img/uluru.jpg">
-                    </li>
-                </ul>
+        <section>
+            <!-- welcome video -->
+            <!-- reference:https://www.youtube.com/watch?v=RIDA6elhmBU -->
+            <div class="video-style">
+                <h1>Welcome to Ngunnawal Contry</h1>
+                <iframe class="video-bg" width="1000" height="600" src="https://www.youtube.com/embed/UEAVvx_oop8?si=lGdkn7NQISkNEkmH"
+                    title="YouTube video player" frameborder="0"
+                    allow=" muted loop accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen ></iframe>
             </div>
-        </div>
-    </div>
+
+        </section>
+    </section>
 
     <main>
         <section id="trees">
@@ -179,14 +171,29 @@
             <!-- add curve -->
 
         </section>
-        <section id="rockArt">
-            <div class="spacer wave2">
-                <h1>This is RockArt</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
-                    libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
-                    eveniet fugit non nihil!</p>
+        <!-- testing glide library  -->
+        <div class="wrap">
+            <div class="glide multi">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img class="glide__slide" src="assets/img/woodprint.jpg">
+                        </li>
+                        <li class="glide__slide">
+                            <img class="glide__slide" src="assets/img/pond.jpg">
+                        </li>
+                        <li class="glide__slide">
+                            <img class="glide__slide" src="assets/img/uluru.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!-- glid previous and next buttons -->
+                <div class="glide_arrows" data-glide-el="controls">
+                    <button class="glide__arrow  glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
             </div>
-        </section>
+        </div>
         <section id="quarry">
             <h1>This is quarry</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
@@ -198,6 +205,28 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
                 libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
                 eveniet fugit non nihil!</p>
+            <div class="row">
+                <div class="column">
+                    <img src="assets/img/snow covered mountain.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+
+                <div class="column">
+                    <img src="assets/img/Brindabella Mountain Range.jpg" alt="Forest" style="width:100%">
+                </div>
+                <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+
+                <div class="column">
+                    <img src="assets/img/uluru.jpg" alt="Mountains" style="width:100%">
+                </div>
+                <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+            </div>
         </section>
         <section id="contact" class="contact-main">
             <h1 class="contact-text">
@@ -250,11 +279,24 @@
             // $("body").fadeOut("slow").removeClass("blue").addClass("light").fadeIn("slow")
             // setTimeout(function(){
             // },2000)
-            
+
             //easier way to write this 
             $(".load-wrapper").delay(800).fadeOut(2000, "linear")
 
         });
+    </script>
+    <!-- initialize and mount a Glide  -->
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 3,
+            breakpoint: { /*for mobile device, show 2 images in perview*/
+                800: {
+                    perView: 2
+                }
+            }
+        }
+        new Glide('.glide', config).mount()
     </script>
 
 </body>

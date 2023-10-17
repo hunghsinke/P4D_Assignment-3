@@ -9,7 +9,7 @@ html {
 
 
 .blue {
-    background-color:#477c4d;
+    background-color: #477c4d;
 
 }
 
@@ -537,7 +537,6 @@ nav {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
-
 }
 
 .footer-container {
@@ -580,11 +579,56 @@ nav {
     background-image: url('../assets/waves/waves1.svg');
 }
 
+/* RockArt element designs starts here. */
 .wave2 {
     background-image: url('../assets/waves/wave_test.png');
     background-size: cover;
 }
+/* turning the RockArt p tag white */
+#rockArt p {
+    color: #fff;
+}
 
+
+/* *************************END************************* */
+
+/* video background */
+.video-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background: #477c4d; */
+    background: rgba(0, 0, 0, 0.5); 
+    background-image: linear-gradient(
+                                    90deg, 
+                                    477c4d, 
+                                    #c7fcce);
+    color: white;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    min-height: 60vh;
+}
+
+.video-bg{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
 .greenbg {
     background-image: url('../assets/img/greenbg.svg');
     background-position: center;
@@ -707,10 +751,61 @@ If we click outside of it, it loses focus and fade out.  */
     background: var(--bg-solar);
 }
 
+/* This is the design for the Burrials section */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
 /* glide css */
+/* This is not working, 
+the previous and next button are showing 
+in an odd place*/
 .wrap {
     max-width: 900px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+
 }
 
 .glide__slide {

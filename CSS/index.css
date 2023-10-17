@@ -150,6 +150,9 @@ section {
 #stones {
     background-color: #82542f;
 }
+#stones h1, #stones p{
+    color: #fff;
+}
 
 #arrange {
     background-color: #82542f;
@@ -164,8 +167,15 @@ section {
     clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
 }
 
+#quarry p {
+    color: #fff;
+}
+
 #burials {
-    background-color: #a28089;
+    background-color: #01570B;
+}
+#burials  h1, #burials p {
+    color: #d2cbcb;
 }
 
 #contact {
@@ -553,18 +563,6 @@ nav {
     color: #fff;
 }
 
-#stones {
-    color: black;
-    /* background-color: #074f57; */
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
-}
-
-#stones h1 {
-    font-size: 2rem;
-    color: black;
-}
-
 
 .spacer {
     aspect-ratio: 960/300;
@@ -617,7 +615,7 @@ Ask how to fix it */
 
 .video-bg{
     position: absolute;
-    /* z-index: -1; */
+    z-index: -1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

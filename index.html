@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3 - one page site</title>
-    <!-- make JS file run after all the html code   -->
-    <script src="JS/index.js" defer></script>
+   
     <!-- <script src="../P4D_Assignment-3/JS/boulderAnimation.js" defer></script> -->
 
     <!-- run jQuery file -->
@@ -20,6 +19,11 @@
     <script src="JS/glide.js" defer></script>
     <script src="JS/testing_slides.js" defer></script>
 
+    <!-- JS Masonry Grid -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" defer></script>
+
+    <!-- make JS file run after all the html code   -->
+    <script src="JS/index.js" defer></script>
 
     <!-- css file link -->
     <link rel="stylesheet" href="CSS/index.css">
@@ -98,9 +102,7 @@
             <img src="assets/img/Brindabella Mountain Range.jpg" alt="">
         </div> -->
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi vel corporis deleniti consequatur
-                incidunt assumenda doloremque velit, illo atque unde non similique fugit cupiditate voluptatem ad
-                aliquid rerum aspernatur distinctio.</p>
+            <p>We acknowledges the First Peoples of this land and recognises their continuous connection to culture, community and Country</p>
 
         </div>
 
@@ -114,33 +116,47 @@
         <img src="assets/img/snow covered mountain.jpg" alt="">
     </div> -->
 
-        <section>
-            <!-- welcome video -->
-            <!-- reference:https://www.youtube.com/watch?v=RIDA6elhmBU -->
-            <div class="video-style">
-                <h1>Welcome to Ngunnawal Contry</h1>
-                <iframe class="video-bg" width="1000" height="600" src="https://www.youtube.com/embed/UEAVvx_oop8?si=lGdkn7NQISkNEkmH"
-                    title="YouTube video player" frameborder="0"
-                    allow=" muted loop accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen ></iframe>
-            </div>
-
-        </section>
+       
     </section>
 
     <main>
-        <section id="trees">
+        <section class="full-height">
+            <!-- welcome video -->
+            <!-- reference:https://www.youtube.com/watch?v=RIDA6elhmBU -->
+            <div class="video-style">
+                <div class="video-bg-black"></div>
+                    <h1>Welcome to Ngunnawal Contry</h1>
+                    <!-- <iframe class="video-bg" src="https://www.youtube.com/embed/UEAVvx_oop8?si=lGdkn7NQISkNEkmH"
+                        title="YouTube video player" frameborder="0"
+                        allow=" muted loop accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen ></iframe> -->
+                    <!-- <video class="video-bg" allow=" muted loop accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen >
+                        <source src="assets/video/Canberra region Welcome to Country.mp4" type="video/mp4">
+                    </video> -->
+                    <video class="video-background" playsinline autoplay loop muted poster>
+                        <!-- works on Safari -->
+                        <source src="assets/video/Canberra region Welcome to Country.mp4" type="video/mp4">
+                        <!-- works on chrome and firefox, I have transcoded to .webm file in assets/video -->
+                        <source src="assets/video/Canberra region Welcome to Country.webm" type="video/webm">
+        
+                    </video>
+            </div>
+
+        </section>
+        
+        <section id="trees" class="full-height">
 
             <!-- src: https://www.videezy.com/nature/12390-vertical-panning-shot-of-trunk-with-magical-forest-on-background-in-4k
             Free Stock Footage by <a target="_blank" href="http://www.videezy.com/">Videezy</a> -->
-            <video id="video-background" playsinline autoplay loop muted poster>
+            <video class="video-background" playsinline autoplay loop muted poster>
                 <!-- works on Safari -->
                 <source src="assets/video/Forest.mp4" type="video/mp4">
                 <!-- works on chrome and firefox, I have transcoded to .webm file in assets/video -->
                 <source src="assets/video/Forest.webm" type="video/webm">
 
             </video>
-            <div class="text-overlay">
+            <div class="text-overlay ">
                 <h1>Sacred Trees</h1>
                 <p>Culturally, scarred trees were created when
                     Aboriginal people removed bark for a
@@ -148,31 +164,40 @@
                     shields and containers.</p>
             </div>
         </section>
-        <section id="stones">
-            <div class="spacer greenbg">
-                <h1>Stones Implements</h1>
-                <!-- <div id="boulder-animation-container"></div> -->
+        <section class="grid-3-col full-height">
+            <section id="stones">
+                <div class="spacer greenbg">
+                    <h1>Stones Implements</h1>
+                    <!-- <div id="boulder-animation-container"></div> -->
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
+                        libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
+                        eveniet fugit non nihil!</p>
+                </div>
+            </section>
+            <section id="arrange" class=" card">
+    
+                <div class="card-body card-flex">
+                    <h1 class="card-title">Stone Arrangements</h1>
+                    <p class="card-subtitle">This is the subtitle</p>
+                    <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum
+                        labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque
+                        quia provident nobis eveniet fugit non nihil!</p>
+                    <button class="card-btn">Read More</button>
+                </div>
+    
+                <!-- add curve -->
+    
+            </section>
+            <section id="quarry">
+                <h1>This is quarry</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
                     libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
                     eveniet fugit non nihil!</p>
-            </div>
+            </section>
         </section>
-        <section id="arrange" class=" card">
-
-            <div class="card-body card-flex">
-                <h1 class="card-title">Stone Arrangements</h1>
-                <p class="card-subtitle">This is the subtitle</p>
-                <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum
-                    labore reprehenderit libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque
-                    quia provident nobis eveniet fugit non nihil!</p>
-                <button class="card-btn">Read More</button>
-            </div>
-
-            <!-- add curve -->
-
-        </section>
+        
         <!-- testing glide library  -->
-        <div class="wrap">
+        <!-- <div class="wrap">
             <div class="glide multi">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
@@ -186,26 +211,21 @@
                             <img class="glide__slide" src="assets/img/uluru.jpg">
                         </li>
                     </ul>
-                </div>
-                <!-- glid previous and next buttons -->
-                <div class="glide_arrows" data-glide-el="controls">
+                </div> 
+                glid previous and next buttons -->
+                <!-- <div class="glide_arrows" data-glide-el="controls">
                     <button class="glide__arrow  glide__arrow--left" data-glide-dir="<">prev</button>
                     <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                 </div>
             </div>
-        </div>
-        <section id="quarry">
-            <h1>This is quarry</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
-                libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
-                eveniet fugit non nihil!</p>
-        </section>
+        </div> -->
+        
         <section id="burials">
             <h1>Aborginal Burrials</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
                 libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
                 eveniet fugit non nihil!</p>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="column">
                     <img src="assets/img/snow covered mountain.jpg" alt="Snow" style="width:100%">
                 </div>
@@ -226,11 +246,99 @@
                 <div class="overlay">
                     <div class="text">Hello World</div>
                 </div>
+            </div> -->
+
+            <!-- Unordered List  -->
+            <div class="grid ">
+                <div class="grid-sizer"></div>
+                <div class="grid-item grid-item--height2">
+                    <img src="assets/img/snow covered mountain.jpg" alt="Snow">
+                </div>
+
+                <div class="grid-item grid-item--width2 grid-item--height2">
+                    <img src="assets/img/Brindabella Mountain Range.jpg" alt="Forest" >
+                    
+                </div>
+
+                <div class="grid-item grid-item--height2">
+                    <img src="assets/img/uluru.jpg" alt="Mountains" >
+                    
+                </div>
+                <div class="grid-item grid-item--height3">
+                    <img src="assets/img/snow covered mountain.jpg" alt="Snow">
+                    
+                </div>
+
+                <div class="grid-item grid-item--height2">
+                    <img src="assets/img/Brindabella Mountain Range.jpg" alt="Forest" >
+                    
+                </div>
+
+                <div class="grid-item grid-item--width3">
+                    <img src="assets/img/Wiradjuri (Erambie) peoples.jpg" alt="Mountains" >
+                    
+                </div>
+                <div class="grid-item">
+                    <img src="assets/img/snow covered mountain.jpg" alt="Snow">
+                    
+                </div>
+
+                <div class="grid-item">
+                    <img src="assets/img/Brindabella Mountain Range.jpg" alt="Forest" >
+                    
+                </div>
+
+                <div class="grid-item ">
+                    <img src="assets/img/uluru.jpg" alt="Mountains" >
+                    
+                </div>
+                <div class="grid-item grid-item--height2">
+                    <img src="assets/img/snow covered mountain.jpg" alt="Snow">
+                    
+                </div>
+
+                <div class="grid-item grid-item--width2 grid-item--height3">
+                    <img src="assets/img/Brindabella Mountain Range.jpg" alt="Forest" >
+                    
+                </div>
+
+                <div class="grid-item">
+                    <img src="assets/img/uluru.jpg" alt="Mountains" >
+                    
+                </div>
+                <div class="grid-item">
+                    <img src="assets/img/snow covered mountain.jpg" alt="Snow">
+                    
+                </div>
+
+                <div class="grid-item ">
+                    <img src="assets/img/Brindabella Mountain Range.jpg" alt="Forest" >
+                    
+                </div>
+
+                <div class="grid-item grid-item--width2 ">
+                    <img src="assets/img/uluru.jpg" alt="Mountains" >
+                    
+                </div>
+                <div class="grid-item grid-item--width2 grid-item--height2">
+                    <img src="assets/img/snow covered mountain.jpg" alt="Snow">
+                    
+                </div>
+
+                <div class="grid-item grid-item--height3">
+                    <img src="assets/img/Brindabella Mountain Range.jpg" alt="Forest" >
+                    
+                </div>
+
+                <div class="grid-item">
+                    <img src="assets/img/uluru.jpg" alt="Mountains" >
+                    
+                </div>
             </div>
         </section>
         <!-- Contact page -->
         <!-- References:https://www.youtube.com/watch?v=RZ-Oe4_Ew7g&list=PLZlA0Gpn_vH8mpXIUHjWoMAAgoCEinL0R&index=14 -->
-        <section id="contact" class="contact-main">
+        <section id="contact" class="contact-main full-height">
             <h1 class="contact-text">
                 Connect with
                 <span class="accent-text">US.</span>

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+   
 }
 
 html {
@@ -44,6 +45,24 @@ a {
     text-decoration: none;
 }
 
+.full-height{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.grid-3-row{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.grid-3-row > *{
+    
+    overflow: hidden;
+}
+.grid-3-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 /*css reset*/
 /* header & footer element */
 .main-header,
@@ -124,14 +143,12 @@ a {
 }
 
 section {
-    width: 100%;
-    float: left;
-    height: 100vh;
+    /* width: 100%; */
     position: relative;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     /* align-items: center; */
-    min-height: 400px;
+    /* min-height: 400px; */
     /* padding: 100px; */
 }
 
@@ -440,8 +457,8 @@ nav {
 
 
 /* for embedded video background */
-#video-background {
-    position: absolute;
+.video-background {
+    /* position: absolute; */
     top: 0;
     left: 0;
     /* bring the video to the centre */
@@ -450,7 +467,7 @@ nav {
     height: 100%;
     object-fit: cover;
     /* Ensures video covers entire viewport */
-    z-index: -1;
+    z-index: 0;
     /* Place the video behind other content */
 }
 
@@ -600,27 +617,48 @@ Ask how to fix it */
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background: #477c4d; */
+    
+    color: white;
+    margin-bottom: 100px;
+    position: relative;
+    
+    /* overflow: hidden; */
+    /* min-height: 60vh; */
+}
+.video-style h1{
+    pointer-events: none;
+    z-index: 1;
+   
+    position: absolute;
+    text-align: center;
+    
+}
+
+.video-bg-black{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* min-width:100%;
+    min-height: 100%; */
     background: rgba(0, 0, 0, 0.5); 
     background-image: linear-gradient(
                                     90deg, 
                                     477c4d, 
                                     #c7fcce);
-    color: white;
-    margin-bottom: 100px;
-    position: relative;
-    overflow: hidden;
-    min-height: 60vh;
-}
 
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
 .video-bg{
-    position: absolute;
+    /* position: absolute; */
     z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    height: 600%;
 }
 .overlay{
     position: absolute;
@@ -815,6 +853,11 @@ in an odd place*/
     line-height: 100px;
     margin: 0;
     text-align: center;
+    height: 100%;
+}
+.glide__slide img{
+    height: 100%;
+
 }
 
 .home-bg {
@@ -863,3 +906,64 @@ in an odd place*/
         width: 100%;
     }
 }
+
+/* JS Masonry Grid style  */
+/* .grid-item { 
+    width: 200px;
+    min-height: 200px;    
+}
+.grid-item--width2 { width: 25%; }
+.grid-item--height2 { height: 25%; }
+.grid img{
+    width: 100%;
+    height: auto;
+    
+}
+.grid {
+    list-style: none;
+} */
+
+.grid {
+    /* background: #EEE; */
+    max-width: 100%;
+  
+  }
+  
+  /* clearfix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- grid-item ---- */
+  
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+    overflow: hidden;
+    display: flex;
+    
+  }
+  .grid-item img{
+    object-fit: contain;
+    width: 100%;
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 100%; /*Ensure the image doesn't exceed its container's height  */
+    object-fit: cover; /* Maintain the image's aspect ratio and cover the container */
+  }
+  .grid-item {
+    height: 120px;
+    float: left;
+    /* background: #D26; */
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+  }
+  
+  .grid-item--width2 { width:  40%; }
+  .grid-item--width3 { width:  60%; }
+  
+  .grid-item--height2 { height: 200px; }
+  .grid-item--height3 { height: 260px; }
+  .grid-item--height4 { height: 360px; }

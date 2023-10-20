@@ -40,3 +40,7 @@ Mosonary- https://masonry.desandro.com/layout
 This is used for the picture layout. 
 
 I have tried to use Glide JS library, but it did not provide me with enough value to keep working on it. This was originally used to do a scrolling image collage. 
+
+Connect with Us page:
+If you hover over the "Connect now" button, you will find the button will change to light green. When you click on the button, you will see it changed to a darker green. I chose three different green for this button. 
+

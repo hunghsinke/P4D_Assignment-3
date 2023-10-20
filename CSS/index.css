@@ -135,6 +135,7 @@ a {
 
 .nav-links li:hover::after {
     width: 100%;
+   
 }
 
 .nav-links a:hover,

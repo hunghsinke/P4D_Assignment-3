@@ -182,7 +182,7 @@ section {
 
 #quarry {
     background-color: #8e5a28;
-    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0); 
 }
 
 #quarry p {
@@ -300,12 +300,20 @@ nav {
     overflow: hidden;
     border: 8px solid #fff;
     position: relative;
-    background-image: url(../assets/img/snow\ covered\ mountain.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
+.card-arrange{
+    background-image: url(../assets/img/snow\ covered\ mountain.jpg);
+}
+.card-imp{
+    background-image: url(../assets/img/greenbg.svg);
+}
+.card-quarry{
+    background-image: url(../assets/img/uluru.jpg);
+}
 .card-body {
     width: 100%;
     height: 100%;

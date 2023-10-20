@@ -306,7 +306,10 @@ nav {
     background-position: center;
 }
 .card-arrange{
-    background-image: url(../assets/img/snow\ covered\ mountain.jpg);
+    /* Reference: Paul Girrawah House, Ngambri/Ngunnawal peoples, work in progress, Kamberri/Canberra, 2021 © the artist.
+    Image sourced from the National Gallery of Australia
+    https://nga.gov.au/events/ceremony-artist-panel-working-with-country/*/
+    background-image: url(../assets/img/Stone-Arrange.jpg);
 }
 .card-imp{
     background-image: url(../assets/img/greenbg.svg);

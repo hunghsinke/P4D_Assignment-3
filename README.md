@@ -44,3 +44,7 @@ I have tried to use Glide JS library, but it did not provide me with enough valu
 Connect with Us page:
 If you hover over the "Connect now" button, you will find the button will change to light green. When you click on the button, you will see it changed to a darker green. I chose three different green for this button. 
 
+
+Image use:
+The image for xxx
+Is from the Australian Institute of Aboriginal and Torres Strait islander Studies (AIATSIS). 

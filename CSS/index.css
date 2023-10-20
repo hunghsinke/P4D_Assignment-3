@@ -311,8 +311,11 @@ nav {
 .card-imp{
     background-image: url(../assets/img/greenbg.svg);
 }
-.card-quarry{
-    background-image: url(../assets/img/uluru.jpg);
+
+/* Image description: Ngunnawal rock art at Yankee Hat in Namadgi National Park on Ngunnawal Country.  */
+.card-art{
+    background-image: url(../assets/img/rock-art.jpeg);
+    
 }
 .card-body {
     width: 100%;

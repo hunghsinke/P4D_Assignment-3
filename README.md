@@ -47,3 +47,5 @@ If you hover over the "Connect now" button, you will find the button will change
 
 Image use:
 The image for the welcome message and about this website is from the Australian Institute of Aboriginal and Torres Strait islander Studies (AIATSIS). 
+
+Most of the images for the burial section is from https://www.ngunnawal.org/gallery. 

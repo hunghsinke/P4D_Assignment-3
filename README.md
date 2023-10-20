@@ -34,3 +34,9 @@ technical achievement - demonstrating techniques that exceed the level discussed
 attention to detail - making sure your work has no typos or errors that affect the presentation of the web site; maintaining good separation between content, presentation and behaviour; commenting and documenting your code efficiently so that it's easy to understand the code you write and demonstrates that you understand what the code does.
 engagement with topic - demonstrating additional research around the topic that gives your site additional depth and interest
 self-reflection - how much insight your readme.md file and code comments provide into your production processes, understanding and approach to the assignment.  What we're looking for here is your ability to look at your own work critically; to recognise the things you did well and the things that you could have possibly improved.
+
+What library I use:
+Mosonary- https://masonry.desandro.com/layout
+This is used for the picture layout. 
+
+I have tried to use Glide JS library, but it did not provide me with enough value to keep working on it. This was originally used to do a scrolling image collage. 

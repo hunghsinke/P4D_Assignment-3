@@ -46,5 +46,4 @@ If you hover over the "Connect now" button, you will find the button will change
 
 
 Image use:
-The image for xxx
-Is from the Australian Institute of Aboriginal and Torres Strait islander Studies (AIATSIS). 
+The image for the welcome message and about this website is from the Australian Institute of Aboriginal and Torres Strait islander Studies (AIATSIS). 

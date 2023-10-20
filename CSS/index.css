@@ -979,3 +979,16 @@ in an odd place*/
   .grid-item--height2 { height: 200px; }
   .grid-item--height3 { height: 260px; }
   .grid-item--height4 { height: 360px; }
+
+  .intro{
+    background-color: #074f57;
+    background-image: url("../assets/img/Engage\ with\ traditional\ owners.png");
+    color: #fceaea;
+
+    /* create space within the image so the paragraph doesn't start from the very edge  */
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    /* create the space at the bottom of the image  */
+    margin-bottom: 100px;
+}

@@ -156,9 +156,6 @@ section {
 /* colour palette for thie website */
 /* https://coolors.co/82542f-b18456-8e5a28-030000-61321c */
 
-#home {
-    /* background-color: #59405C; */
-}
 
 #trees {
 
@@ -586,12 +583,17 @@ nav {
 
 .hero {
 
-    /* background-image: url("../assets/img/woodprint.jpg"); */
-    background-position: center;
-    background-size: cover;
+ 
     color: #fff;
 }
-
+/* this is not working for the background pattern  */
+.hero-bg{
+    background-image: url("../assets/img/pattern.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1; 
+}
 
 .spacer {
     aspect-ratio: 960/300;
@@ -981,10 +983,11 @@ in an odd place*/
   .grid-item--height4 { height: 360px; }
 
   .intro{
-    background-color: #074f57;
+    background-color: #01652e;
     background-image: url("../assets/img/Engage\ with\ traditional\ owners.png");
+    
+    background-blend-mode: multiply;
     color: #fceaea;
-
     /* create space within the image so the paragraph doesn't start from the very edge  */
     padding-top: 200px;
     padding-bottom: 200px;

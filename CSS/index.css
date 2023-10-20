@@ -193,9 +193,7 @@ section {
     color: #d2cbcb;
 }
 
-#contact {
-    background-color: #61321c;
-}
+
 
 h1 {
     color: #fff;
@@ -408,6 +406,16 @@ nav {
     margin: 0;
 }
 
+.contact-bg{
+    background-image: url(../assets/img/pattern.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    
+}
+#contact {
+    background-color: #643d2a;
+
+}
 .accent-text {
     color: #BC3A80;
 }

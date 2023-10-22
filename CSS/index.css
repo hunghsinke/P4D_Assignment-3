@@ -80,12 +80,15 @@ a {
 /* change element style of footer */
 .main-footer {
     width: 100%;
-    height: 70px;
+    
     background-color: #22401f;
     color: #fff;
     /*not working for some reason*/
-    /* z-index: 20; */
+    
     font-weight: bold;
+    position: relative;
+    z-index: 10;
+    padding: 50px;
 }
 
 .main-header {
@@ -93,7 +96,7 @@ a {
     height: 140px;
     padding: 20px 50px;
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     background-color: #22401f;
     opacity: 1;
 }
@@ -191,6 +194,9 @@ section {
 }
 #burials  h1, #burials p {
     color: #d2cbcb;
+}
+.p-style{
+    padding: 20px;
 }
 
 
@@ -534,8 +540,8 @@ nav {
 }
 
 .text-box {
-    /* margin-top: 130px;
-    max-width: 600px; */
+    margin-top: 130px;
+    /* max-width: 600px; */
     padding-top: 200px;
     padding-bottom: 200px;
     width: 100%;
@@ -703,12 +709,12 @@ Ask how to fix it */
 
 .dropdown {
     position: absolute;
-    width: 500px;
     opacity: 0;
     z-index: 2;
-    background: aqua;
+    background: #3c0f02;
     /* opacity: 0.1; */
     border-top: 2px solie white;
+    height: 100px;
 
     /* round up the corners */
     border-bottom-left-radius: 8px;
@@ -717,7 +723,7 @@ Ask how to fix it */
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 3rem;
+   
     margin-top: 2rem;
     padding: 0.5rem;
 
@@ -747,7 +753,7 @@ If we click outside of it, it loses focus and fade out.  */
 /* before add content before the link text */
 .dropdown-item a::before {
     content: " ";
-    border: 2px solid white;
+    border: 2px solid rgb(67, 63, 63);
     border-radius: 50%;
 
     /* draw perfect circle  */
@@ -1000,11 +1006,10 @@ in an odd place*/
     background-blend-mode: multiply;
     color: #fceaea;
     /* create space within the image so the paragraph doesn't start from the very edge  */
-    padding-top: 200px;
-    padding-bottom: 200px;
-
+    padding: 100px;
     /* create the space at the bottom of the image  */
     margin-bottom: 100px;
+
 }
 
 /* Light box CSS design  */
@@ -1036,14 +1041,13 @@ in an odd place*/
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px;
+    z-index: 30;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #023f09;
+    background-color: #123115;;
   }
   
   /* Modal Content */
@@ -1118,13 +1122,13 @@ in an odd place*/
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    top: -40px;
   }
   
   /* Caption text */
   .caption-container {
     text-align: center;
-    background-color: #654808;
+    background-color: rgba(255, 25, 25, 0.35);
     padding: 2px 16px;
     color: white;
   }

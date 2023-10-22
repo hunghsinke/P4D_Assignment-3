@@ -53,11 +53,11 @@
             <!-- add a logo here -->
             <!-- <a href="#"><img src="assets/img/place2.png" alt=""></a> -->
             <svg width="80" height="80" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="6.5" y="6.5" width="126" height="126" rx="13.5" fill="white" stroke="#DC6C2F"
+                <rect x="6.5" y="6.5" width="126" height="126" rx="13.5" stroke="#C7FCCE"
                     stroke-width="13" />
                 <path
                     d="M69.8039 111.686C69.8039 111.686 99.5462 81.7022 99.5462 58.9536C99.5462 50.5624 96.4127 42.5149 90.8349 36.5814C85.2571 30.6479 77.692 27.3145 69.8039 27.3145C61.9157 27.3145 54.3506 30.6479 48.7729 36.5814C43.1951 42.5149 40.0615 50.5624 40.0615 58.9536C40.0615 81.7022 69.8039 111.686 69.8039 111.686ZM69.8039 74.7732C65.8598 74.7732 62.0773 73.1065 59.2884 70.1398C56.4995 67.173 54.9327 63.1493 54.9327 58.9536C54.9327 54.758 56.4995 50.7343 59.2884 47.7675C62.0773 44.8008 65.8598 43.134 69.8039 43.134C73.748 43.134 77.5305 44.8008 80.3194 47.7675C83.1083 50.7343 84.6751 54.758 84.6751 58.9536C84.6751 63.1493 83.1083 67.173 80.3194 70.1398C77.5305 73.1065 73.748 74.7732 69.8039 74.7732Z"
-                    fill="#DC6C2F" />
+                    fill="#C7FCCE" />
             </svg>
             <nav class="hero ">
                 <ul id="menu" class="nav-links">
@@ -141,7 +141,7 @@
                         allow=" muted loop accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen ></iframe> -->
 
-                <video class="video-background" playsinline autoplay loop muted poster>
+                <video class="video-background"  autoplay muted controls>
                     <!-- works on Safari -->
                     <source src="assets/video/Canberra region Welcome to Country.mp4" type="video/mp4">
                     <!-- works on chrome and firefox, I have transcoded to .webm file in assets/video -->
@@ -254,8 +254,8 @@
         </div> -->
 
         <section id="burials">
-            <h1>Aborginal Burrials</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
+            <h1 class="p-style">Aborginal Burrials</h1>
+            <p class="p-style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum labore reprehenderit
                 libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident nobis
                 eveniet fugit non nihil!</p>
             <!-- <div class="row">
@@ -305,7 +305,7 @@
                 </div>
                 <!-- Mullion the Eagle. The Wedgetail Eagle known in the Dreaming stories of some Aboriginal people as Mullion, is also a totem bird of the local Ngunnawal people. -->
                 <div class="grid-item grid-item--height3">
-                    <img src="assets/img/eagle.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow"
+                    <img src="assets/img/eagle-1.png" onclick="openModal();currentSlide(4)" class="hover-shadow"
                         alt="Snow">
 
                 </div>
@@ -419,7 +419,7 @@
                     <!-- Mullion the Eagle. The Wedgetail Eagle known in the Dreaming stories of some Aboriginal people as Mullion, is also a totem bird of the local Ngunnawal people. -->
                     <div class="mySlides">
                         <div class="numbertext">4 / 18</div>
-                        <img src="assets/img/eagle.jpeg">
+                        <img src="assets/img/eagle-1.png">
 
                     </div>
                     <!-- Alexander J Bell and Bertha Bell née McGuinness doing their bit for a local show with unnamed fellow Aboriginals (extract from Eric Bell’s book). Photo: Bobby Moe -->
@@ -535,7 +535,7 @@
                         </div>
 
                         <div class="column">
-                            <img class="demo" src="assets/img/eagle.jpeg" onclick="currentSlide(4)" alt="Lights">
+                            <img class="demo" src="assets/img/eagle-1.png" onclick="currentSlide(4)" alt="Lights">
                         </div>
 
                         <div class="column">
@@ -636,7 +636,6 @@
     <footer class="main-footer">
         <div class="footer-container">
             <nav class="footer-nav">
-                <br>
                 <ul>
                     <li>
                         <a href="#" class="social-link">
@@ -651,7 +650,7 @@
                         </a>
                     </li>
                 </ul>
-                <p>&copy; Copyright 2023 by MEMEME. All Rights Reserved.</p><br>
+                <p>&copy; Copyright 2023 by MEMEME. All Rights Reserved.</p>
             </nav>
         </div>
     </footer>

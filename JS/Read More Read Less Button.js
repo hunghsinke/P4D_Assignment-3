@@ -27,11 +27,11 @@ for (i = 0; i< buttons.length; i++){
 
     if ( siblings.css("display") === "none") {
       siblings.css("display", "inline");
-      // btnText.innerHTML = "Read more"; 
+      dots.innerHTML = "Read Less"; 
       // moreText.style.display = "none";
     } else {
       siblings.css("display", "none");
-      // btnText.innerHTML = "Read less"; 
+      dots.innerHTML = "Read More"; 
       // moreText.style.display = "inline";
     }
 

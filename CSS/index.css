@@ -195,6 +195,13 @@ section {
 #burials  h2, #burials p, #burials li {
     color: #d2cbcb;
 }
+
+/* h2 style starts here for all h2 element  */
+h2 {
+    margin: 40px 0;
+    font-size: 50px;
+
+}
 .heading-caption{
     padding: 20px;
     display: flex;
@@ -389,7 +396,13 @@ nav {
     font-weight: 500;
     cursor: pointer;
     width: 120px;
+    margin: 40px 0;
+    
 }
+.card-btn:hover{
+    background-color: #44A04F;
+}
+
 
 /* contact page */
 /* source code: https://github.com/WebDevSimplified/Spotify-Landing-Page-Redesign/blob/master/join.html */

@@ -208,6 +208,9 @@ section {
     width: 70ch;
 }
 
+.heading-caption-stone{
+    max-width: 60ch;
+}
 
 
 h1 {
@@ -536,6 +539,7 @@ nav {
 
 .text-overlay p {
     font-size: 1.2rem;
+    max-width: 70ch;
 }
 
 .flex {

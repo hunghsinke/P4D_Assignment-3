@@ -995,6 +995,7 @@ in an odd place*/
   .grid-item--width2 { width:  60%; }
   .grid-item--width3 { width:  80%; }
   
+  .grid-item--height1{height: 260px;}
   .grid-item--height2 { height: 400px; }
   .grid-item--height3 { height: 460px; }
   .grid-item--height4 { height: 560px; }

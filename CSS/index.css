@@ -192,7 +192,7 @@ section {
 #burials {
     background-color: #01570B;
 }
-#burials  h2, #burials p {
+#burials  h2, #burials p, #burials li {
     color: #d2cbcb;
 }
 .heading-caption{
@@ -208,9 +208,11 @@ section {
     width: 70ch;
 }
 
+/* CSS for the stone section */
 .heading-caption-stone{
     max-width: 60ch;
 }
+.more {display: none;}
 
 
 h1 {

@@ -22,6 +22,9 @@
     <!-- JS Masonry Grid -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" defer></script>
 
+    <!-- JS Read more Read Less Button -->
+    <script src="JS/Read More Read Less Button.js" defer></script>
+
     <!-- make JS file run after all the html code   -->
     <script src="JS/index.js" defer></script>
 
@@ -221,28 +224,34 @@
                             The main types include:
                         </p>
                         <p class="card-info">
-
-                        <ul>
-                            <li>
-                                Standing stones: set in the ground, wedged in crevices or supported by other stones.
-                            </li>
-                            <li>
-                                Cairns: simple piles, piles used for ceremonial purposes, mounds or ridges of stones.
-                            </li>
-                            <li>
-                                Lines / walls: continuous rows, multiple tier rows, discontinuous rows, straight/
-                                curved/meandering rows.
-                            </li>
-                            <li>
-                                Compound sets: combinations of some or all the above.
-                            </li>
-                            <li>
-                                ‘Lizard traps’ – slabs of granite placed on or propped up by low dry-stone walls or
-                                smaller exfoliated pieces to make a cavity beneath them.
-                            </li>
-                        </ul>
+                            <span id="dots">...</span>
                         </p>
-                        <button class="card-btn">Read More</button>
+                        <span class="more">
+                            <p >
+                            <ul class="card-info">
+                                <li>
+                                    Standing stones: set in the ground, wedged in crevices or supported by other stones.
+                                </li>
+                                <li>
+                                    Cairns: simple piles, piles used for ceremonial purposes, mounds or ridges of
+                                    stones.
+                                </li>
+                                <li>
+                                    Lines / walls: continuous rows, multiple tier rows, discontinuous rows, straight/
+                                    curved/meandering rows.
+                                </li>
+                                <li>
+                                    Compound sets: combinations of some or all the above.
+                                </li>
+                                <li>
+                                    ‘Lizard traps’ – slabs of granite placed on or propped up by low dry-stone walls or
+                                    smaller exfoliated pieces to make a cavity beneath them.
+                                </li>
+                            </ul>
+                            </p>
+                        </span>
+                        <button class="card-btn myBtn" >Read More</button>
+                        <!-- onclick="myFunction()" -->
                     </div>
                 </div>
             </section>
@@ -258,11 +267,17 @@
                             Indigenous Australians and associated with spiritual ceremonies or utilitarian purposes.
                         </p>
                         <p class="card-info">
-                            Although many are difficult to date, they are the only prehistoric structures associated
-                            with prehistoric Aboriginal culture, believed to have been part of their practices for a
-                            very long time.
+                            <span id="dots">...</span>
                         </p>
-                        <button class="card-btn">Read More</button>
+                        <span class="more">
+                            <p class="card-info">
+                                Although many are difficult to date, they are the only prehistoric structures associated
+                                with prehistoric Aboriginal culture, believed to have been part of their practices for a
+                                very long time.
+                            </p>
+                        </span>
+                        <button class="card-btn myBtn"  >Read More</button>
+                        <!-- onclick="myFunction()" -->
                     </div>
                 </div>
 
@@ -273,6 +288,7 @@
                 <div class="card-body card-flex">
                     <div class="heading-caption-stone">
                         <h1 class="card-title">Rock Art</h1>
+                        <!-- The information below is from https://www.firstpeoplesrelations.vic.gov.au/fact-sheet-aboriginal-rock-art -->
                         <p class="card-subtitle">Aboriginal people created artworks on rock surfaces. </p>
                         <p class="card-info">
                             Rock shelter paintings are usually of small stick figures, other simple forms such as
@@ -283,14 +299,20 @@
                             painting or engraving to:
                         </p>
                         <p class="card-info">
+                            <span id="dots">...</span>
+                        </p>
+                        <span class="more">
+                            <p class="card-info">
                             <ul>
                                 <li>perform part of a ritual</li>
                                 <li>illustrate aspects of ceremonies, such as initiation rites or funerals</li>
                                 <li>show the people’s bond with the land</li>
                                 <li>record events such as a successful hunt, or the arrival of white people</li>
                             </ul>
-                        </p>
-                        <button class="card-btn">Read More</button>
+                            </p>
+                        </span>
+                        <button class="card-btn myBtn"  >Read More</button>
+                        <!-- onclick="myFunction()" -->
                     </div>
                 </div>
             </section>
@@ -325,12 +347,42 @@
             <div class="heading-caption">
                 <div>
                     <h2 class="card-title">Aborginal Burrials</h2>
-                    <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe nostrum
-                        labore
-                        reprehenderit
-                        libero dolores exercitationem velit illo et, suscipit veritatis delectus, neque quia provident
-                        nobis
-                        eveniet fugit non nihil!</p>
+                    <p class="card-subtitle">
+                        Aboriginal burials are clusters of human bones eroding from the ground.
+                    </p>
+                    <p class="card-info">
+                        Aboriginal burials are normally found as clusters of human bones eroding from the ground, or
+                        exposed during ground disturbance.
+                    </p>
+                    <p class="card-info">
+                        Aboriginal burials are normally found as clusters of human bones eroding from the ground, or
+                        exposed during ground disturbance.
+
+                    </p>
+                    <p class="card-info">
+                        Aboriginal burial places normally contain the remains of one or two people, although cemeteries
+                        that contain the remains of hundreds of people buried over thousands of years have been found.
+                    </p>
+                    <p class="card-info">
+                        Aboriginal burial places normally contain the remains of one or two people, although cemeteries
+                        that contain the remains of hundreds of people buried over thousands of years have been found.
+
+                    </p>
+                    <p>
+                    <ul class="card-info">
+                        <li>Aboriginal burials are normally found as concentrations of human bones or teeth, exposed by
+                            erosion or earth works</li>
+                        <li>remains may be scattered over a wide area, but well-preserved remains occur as tight
+                            clusters about the size of a human body</li>
+                        <li>burials tend to be in soft soils and sand, although some burials also occur in rock shelters
+                            and caves</li>
+                        <li>recently exposed bones look ‘fresh’, and may be spotted or stained the colour of surrounding
+                            soil. Older remains may be covered by a smooth, cement-like substance and be weathered grey
+                            or white in colour</li>
+                        <li>soil or sand around the bones may be stained with charcoal or ochre</li>
+                        <li>shell, animal bone and stone tools may sometimes be present</li>
+                    </ul>
+                    </p>
                 </div>
             </div>
             <!-- <div class="row">

@@ -987,9 +987,10 @@ in an odd place*/
 } */
 
 .grid {
-    /* background: #EEE; */
+    background: #EEE;
     max-width: 100%;
-  
+    padding: 50px;
+    box-sizing: border-box;
   }
   
   /* clearfix */
@@ -1001,8 +1002,7 @@ in an odd place*/
   
   /* ---- grid-item ---- */
   
-  .grid-sizer,
-  .grid-item {
+  .grid-sizer {
     width: 20%;
     overflow: hidden;
     display: flex;
@@ -1014,14 +1014,18 @@ in an odd place*/
     max-width: 100%; /* Ensure the image doesn't exceed its container's width */
     max-height: 100%; /*Ensure the image doesn't exceed its container's height  */
     object-fit: cover; /* Maintain the image's aspect ratio and cover the container */
-  }
+    margin: 20px;
+}
   .grid-item {
     height: 120px;
     float: left;
     /* background: #D26; */
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 5px;
+    /* border: 2px solid #333; */
+    /* border-color: hsla(0, 0%, 0%, 0.5); */
+    /* border-radius: 5px; */
+    width: 20%;
+    overflow: hidden;
+    display: flex;
   }
   
   .grid-item--width2 { width:  60%; }

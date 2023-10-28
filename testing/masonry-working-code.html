@@ -1,0 +1,321 @@
+<!-- Images used to open the lightbox -->
+<!-- Unordered List  -->
+<div class="grid ">
+    <div class="grid-sizer"></div>
+    <div class="grid-item grid-item--height2">
+        <!-- Image description: Adrian Brown conducts the smoking ceremony in Kambah as Housing Minister Yvette Berry walks past. Photo: Karleen Minney. 
+        Source: https://www.ngunnawal.org/gallery-->
+        <img src="assets/img/smoking-ceremony1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow"
+            alt="smoking ceremony 1">
+    </div>
+    <!-- Ngunnawal elder Wally Bell performed a smoking ceremony to begin the Reconciliation day event at the National Arboretum on Ngunnawal Country. Photo: ACTAPS, 2022. -->
+    <div class="grid-item grid-item--width2 grid-item--height5">
+        <img src="assets/img/smoking-ceremony4.png" onclick="openModal();currentSlide(2)" class="hover-shadow"
+            alt="smoking ceremony 4">
+
+    </div>
+    <!-- Smoking ceremony on Ngunnawal Country -->
+    <div class="grid-item grid-item--height2">
+        <img src="assets/img/smoking-ceremony6.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow"
+            alt="smoking-ceremony6">
+
+    </div>
+    <!-- Mullion the Eagle. The Wedgetail Eagle known in the Dreaming stories of some Aboriginal people as Mullion, is also a totem bird of the local Ngunnawal people. -->
+    <div class="grid-item grid-item--height3">
+        <img src="assets/img/eagle-1.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="eagle-1">
+
+    </div>
+    <!-- Alexander J Bell and Bertha Bell née McGuinness doing their bit for a local show with unnamed fellow Aboriginals (extract from Eric Bell’s book). Photo: Bobby Moe -->
+    <div class="grid-item grid-item--height5">
+        <img src="assets/img/armour.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="armour">
+
+    </div>
+
+    <div class="grid-item grid-item--width2 grid-item--height3">
+        <img src="assets/img/tobacco-pipe.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"
+            alt="tobacco-pipe">
+
+    </div>
+    <!-- Richie Allen conducting a smoking ceremony on Ngunnawal Country (Canberra) Photo: Canberra Times -->
+    <div class="grid-item grid-item--height3 ">
+        <img src="assets/img/boomerang.png" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="boomerang">
+
+    </div>
+
+    <div class="grid-item">
+        <img src="assets/img/spearthrower.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow"
+            alt="spearthrower">
+    </div>
+
+    <div class="grid-item grid-item--height3">
+        <img src="assets/img/king-breastplate.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow"
+            alt="breastplate">
+    </div>
+    <div class="grid-item grid-item--height2">
+        <img src="assets/img/richie-jnr.jpeg" onclick="openModal();currentSlide(10)" class="hover-shadow"
+            alt="richie junior">
+
+    </div>
+
+    <!-- Ngunnawal elder Warren Daley launches NAIDOC Week 2020 at DFAT in Canberra (Ngunnawal Country) with a traditional smoking ceremony . Photo: DFAT. -->
+    <div class="grid-item grid-item--width2 grid-item--height5">
+        <img src="assets/img/smoking-ceremony2.jpeg" onclick="openModal();currentSlide(11)" class="hover-shadow"
+            alt="smoking ceremony 2">
+
+    </div>
+
+    <div class="grid-item grid-item--height3">
+        <img src="assets/img/breastplate.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow"
+            alt="breastplate">
+
+    </div>
+    <div class="grid-item grid-item--height3">
+        <img src="assets/img/boys-home.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow" alt="boys home">
+
+    </div>
+
+    <div class="grid-item grid-item--height5 ">
+        <img src="assets/img/local-show.jpeg" onclick="openModal();currentSlide(14)" class="hover-shadow"
+            alt="local show">
+
+    </div>
+
+    <!-- Local Ngunnawal people preparing for the 1921 street procession commemorating the centenary of Hamilton Humes sighting of the Yass Valley. Photo: State Library of NSW ON 265/70-80 -->
+    <div class="grid-item grid-item--width2 grid-item--height3 ">
+        <img src="assets/img/street procession commemorating.jpeg" onclick="openModal();currentSlide(15)"
+            class="hover-shadow" alt="street procession commemorating">
+
+    </div>
+    <!-- Tina Brown conducting Welcome to Ngunnawal Country ceremony, 46th Parliament. Courtesy of Auspic/DPS. -->
+    <div class="grid-item grid-item--width2 grid-item--height5">
+        <img src="assets/img/welcome-ceremony.jpeg" onclick="openModal();currentSlide(16)" class="hover-shadow"
+            alt="Welcome ceremony">
+
+    </div>
+    <!-- Laurie McDonald, 2019 CWB Indigenous Businesswoman of the year. -->
+    <div class="grid-item grid-item--height5">
+        <img src="assets/img/ingidenous business woman.jpeg" onclick="openModal();currentSlide(17)" class="hover-shadow"
+            alt="indigenous business woman">
+
+    </div>
+
+    <!-- Richie Allen performing a smoking ceremony outside of the Australian War Memorial. Photo: airforce.gov.au. -->
+    <div class="grid-item grid-item--height1">
+        <img src="assets/img/smoking-ceremony5.jpeg" onclick="openModal();currentSlide(18)" class="hover-shadow"
+            alt="smoking-ceremony3">
+
+    </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides">
+            <!-- Image description: Adrian Brown conducts the smoking ceremony in Kambah as Housing Minister Yvette Berry walks past. Photo: Karleen Minney. 
+            Source: https://www.ngunnawal.org/gallery-->
+            <div class="numbertext">1 / 18</div>
+            <img src="assets/img/smoking-ceremony1.jpeg">
+        </div>
+        <!-- Ngunnawal elder Wally Bell performed a smoking ceremony to begin the Reconciliation day event at the National Arboretum on Ngunnawal Country. Photo: ACTAPS, 2022. -->
+        <div class="mySlides">
+            <div class="numbertext">2 / 18</div>
+            <img src="assets/img/smoking-ceremony4.png">
+
+        </div>
+        <!-- Smoking ceremony on Ngunnawal Country -->
+        <div class="mySlides">
+            <div class="numbertext">3 / 18</div>
+            <img src="assets/img/smoking-ceremony6.jpeg">
+
+        </div>
+        <!-- Mullion the Eagle. The Wedgetail Eagle known in the Dreaming stories of some Aboriginal people as Mullion, is also a totem bird of the local Ngunnawal people. -->
+        <div class="mySlides">
+            <div class="numbertext">4 / 18</div>
+            <img src="assets/img/eagle-1.png">
+
+        </div>
+        <!-- Alexander J Bell and Bertha Bell née McGuinness doing their bit for a local show with unnamed fellow Aboriginals (extract from Eric Bell’s book). Photo: Bobby Moe -->
+        <div class="mySlides">
+            <div class="numbertext">5 / 18</div>
+            <img src="assets/img/armour.jpg">
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 18</div>
+            <img src="assets/img/tobacco-pipe.jpg">
+
+        </div>
+        <!-- Richie Allen conducting a smoking ceremony on Ngunnawal Country (Canberra) Photo: Canberra Times -->
+        <div class="mySlides">
+            <div class="numbertext">7 / 18</div>
+            <img src="assets/img/boomerang.png">
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">8 / 18</div>
+            <img src="assets/img/spearthrower.jpg">
+        </div>
+        <!-- 8 pictures -->
+
+        <div class="mySlides">
+            <div class="numbertext">9 / 18</div>
+            <img src="assets/img/king-breastplate.jpg">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">10 / 18</div>
+            <img src="assets/img/richie-jnr.jpeg">
+
+        </div>
+
+        <!-- Ngunnawal elder Warren Daley launches NAIDOC Week 2020 at DFAT in Canberra (Ngunnawal Country) with a traditional smoking ceremony . Photo: DFAT. -->
+        <div class="mySlides">
+            <div class="numbertext">11 / 18</div>
+            <img src="assets/img/smoking-ceremony2.jpeg">
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">12 / 18</div>
+            <img src="assets/img/breastplate.jpg">
+
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">13 / 18</div>
+            <img src="assets/img/boys-home.jpg">
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">14 / 18</div>
+            <img src="assets/img/local-show.jpeg">
+
+        </div>
+
+        <!-- Local Ngunnawal people preparing for the 1921 street procession commemorating the centenary of Hamilton Humes sighting of the Yass Valley. Photo: State Library of NSW ON 265/70-80 -->
+        <div class="mySlides ">
+            <div class="numbertext">15 / 18</div>
+            <img src="assets/img/street procession commemorating.jpeg">
+
+        </div>
+        <!-- Tina Brown conducting Welcome to Ngunnawal Country ceremony, 46th Parliament. Courtesy of Auspic/DPS. -->
+        <div class="mySlides">
+            <div class="numbertext">16 / 18</div>
+            <img src="assets/img/welcome-ceremony.jpeg">
+
+        </div>
+        <!-- Laurie McDonald, 2019 CWB Indigenous Businesswoman of the year. -->
+        <div class="mySlides">
+            <div class="numbertext">17 / 18</div>
+            <img src="assets/img/ingidenous business woman.jpeg">
+
+        </div>
+
+        <!-- Richie Allen performing a smoking ceremony outside of the Australian War Memorial. Photo: airforce.gov.au. -->
+        <div class="mySlides">
+            <div class="numbertext">18 / 18</div>
+            <img src="assets/img/smoking-ceremony5.jpeg">
+
+        </div>
+
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="demo-container">
+            <div class="column">
+                <img class="demo" src="assets/img/smoking-ceremony1.jpeg" onclick="currentSlide(1)"
+                    alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/smoking-ceremony4.png" onclick="currentSlide(2)"
+                    alt="Snow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/smoking-ceremony6.jpeg" onclick="currentSlide(3)"
+                    alt="Mountains">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/eagle-1.png" onclick="currentSlide(4)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/armour.jpg" onclick="currentSlide(5)" alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/tobacco-pipe.jpg"
+                    onclick="currentSlide(6)" alt="Snow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/boomerang.jpg" onclick="currentSlide(7)"
+                    alt="Mountains">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/spearthrower.jpg" onclick="currentSlide(8)"
+                    alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/king-breastplate.jpg" onclick="currentSlide(9)"
+                    alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/richie-jnr.jpeg" onclick="currentSlide(10)" alt="Snow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/smoking-ceremony2.jpeg" onclick="currentSlide(11)"
+                    alt="Mountains">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/breastplate.jpg" onclick="currentSlide(12)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/boys-home.jpg" onclick="currentSlide(13)"
+                    alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/local-show.jpeg" onclick="currentSlide(14)" alt="Snow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/street procession commemorating.jpeg"
+                    onclick="currentSlide(15)" alt="Mountains">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/welcome-ceremony.jpeg" onclick="currentSlide(16)"
+                    alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/ingidenous business woman.jpeg" onclick="currentSlide(17)"
+                    alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="assets/img/smoking-ceremony5.jpeg" onclick="currentSlide(18)"
+                    alt="Snow">
+            </div>
+        </div>
+    </div>
+</div>

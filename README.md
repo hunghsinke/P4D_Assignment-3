@@ -85,4 +85,4 @@ I use Figma to create and refine the color theme of my website. I start by selec
 
 Additionally, Figma allows me to crop or mask images, which I use to remove any unwanted white side bars from images I include in my website. This helps maintain a clean and uniform appearance in my web design, all within the same tool.
 
-![alt text]
+![alt text](https://github.com/hunghsinke/P4D_Assignment-3/blob/main/assets/img/colour-theme.png)

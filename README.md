@@ -18,6 +18,7 @@ Additionally, Figma allows me to crop or mask images, which I use to remove any 
 ## Library:
 Mosonary- https://masonry.desandro.com/layout
 This is used for the Montage layout. 
+
 Masonry layouts arrange elements like a mason arranging bricks in a wall, hence the name. Unlike traditional grid layouts, where elements are placed in rows and columns, in a masonry layout, elements are stacked one below the other, and they automatically fill available horizontal space, adjusting their positions to fit the varying heights of the items. This layout is often used for creating Pinterest-style grids, image galleries, or any content where maintaining a consistent vertical rhythm is important.
 
 The Masonry JavaScript library is a popular choice for implementing this type of layout on web pages. It provides a simple and efficient way to achieve a masonry layout, making it easier for web developers to create visually appealing and responsive grid structures for their content.

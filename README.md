@@ -94,6 +94,10 @@ Through the process I also learn to use Git pull, push and merge request. To per
 > - Once satisfied, they will merge the pull request.
 > - The changes are now incorporated into the original repository.
 
+## Navigation Bar
+The navigation bar was meticulously crafted to encompass five distinct elements, each serving as a direct portal to the corresponding sections of the webpage. These navigation elements have been designed to remain affixed to the top of the page and follow the user as they scroll downward, thus ensuring seamless accessibility. In an additional layer of user-centric functionality, the navigation bar is intelligently configured to automatically disappear when the user scrolls down, enhancing the visual focus on the webpage's content. Specifically, the **"Sacred Tree"** element was designed to seamlessly guide the user to the Tree section, **"Stone Implements"** functions as a navigational link to the Stone section, and **"Aboriginal Burials"** offers direct access to the 'burial' section of the webpage. This intentional design structure, which includes the dynamic behavior of the navigation bar, ensures a user-friendly and coherent browsing experience while optimizing the visibility of essential content.
+
+## Sources
 
 ## Improvements
 As I reflect on the ongoing development of the website, I recognise that the next phase is to dedicated focus on enhancing its responsiveness. While I did make an initial attempt to address this aspect, I've come to appreciate the intricacies and challenges involved in achieving optimal responsiveness. Consequently, I've chosen to defer this task for the time being, recognising the importance of careful consideration and planning in order to effectively optimise the website's performance on various devices and screen sizes. This decision underscores my commitment to a thoughtful and deliberate approach to web development.

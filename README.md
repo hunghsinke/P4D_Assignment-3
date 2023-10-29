@@ -78,3 +78,7 @@ Through the process I also learn to use Git pull, push and merge request. To per
 > - Once satisfied, they will merge the pull request.
 > - The changes are now incorporated into the original repository.
 
+## Design concepts
+I use Figma to create and refine the color theme of my website. I start by selecting a color palette that complements my website's branding and style. Figma's color picker and swatch system make it easy to experiment with different color combinations. I also use Figma to apply these colors consistently across various design elements, ensuring a cohesive and visually appealing look. 
+
+Additionally, Figma allows me to crop or mask images, which I use to remove any unwanted white side bars from images I include in my website. This helps maintain a clean and uniform appearance in my web design, all within the same tool.

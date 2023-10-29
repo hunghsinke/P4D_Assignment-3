@@ -45,6 +45,9 @@ I also tried to us JavaScript Masonry library to do **montage** layout. However,
 I carefully designed the "Connect now" button to change colors as you interact with it. When you hover your mouse over the button, it turns a lighter shade of green, and when you click on it, it becomes a darker green. I intentionally used three different shades of green to make the button more visually appealing.
 
 ## Image use:
+
+The images I have utilised in this project have been sourced from websites that grant permission for their usage, provided certain conditions are met. Specifically, these websites allow the use of their images as long as they are not altered or recreated, and they are not used for any commercial purposes. I want to emphasise that these images have been exclusively employed for the purpose of completing this assignment and adhere to the usage terms stipulated by the source websites.
+
 The image for the welcome message and about this website is from the Australian Institute of Aboriginal and Torres Strait islander Studies (AIATSIS). 
 
 Most of the images for the burial section is from this [website](https://www.ngunnawal.org/gallery).

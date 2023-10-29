@@ -81,7 +81,7 @@ Through the process I also learn to use Git pull, push and merge request. To per
 > - The changes are now incorporated into the original repository.
 
 ## Design concepts
-I look up on pinterest and various website about aboriginal culture in the ACT. I find that the colour they use most on those website is green and brown. I scout many projects, and I found a project on GitHub using the same colour theme. Therefore, I use use Figma to find the hex code of the colour on the website. 
+In my quest to design a website inspired by Aboriginal culture in the ACT, I embarked on a thoughtful research journey. I delved into Pinterest and explored various websites dedicated to this cultural heritage. Through this exploration, a recurring color scheme of green and brown emerged as a prevalent and culturally resonant choice. To ensure the authenticity of my design, I sourced numerous projects and eventually stumbled upon a project on GitHub that brilliantly utilised this same color palette. Leveraging Figma, I meticulously sought out the exact hex codes that matched the colors from this project, aiming to infuse my website with a genuine and respectful representation of Aboriginal culture in the ACT. This meticulous approach underscored my commitment to a thoughtful and culturally sensitive design process.
 
 I use Figma to create and refine the color theme of my website. I start by selecting a color palette that complements my website's branding and style. Figma's color picker and swatch system make it easy to experiment with different color combinations. I also use Figma to apply these colors consistently across various design elements, ensuring a cohesive and visually appealing look. 
 

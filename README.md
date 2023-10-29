@@ -60,8 +60,8 @@ I also tried to us JavaScript Masonry library to do **montage** layout. However,
 Through the process I also learn to use Git pull, push and merge request. To perform actions like pulling, pushing, and creating a merge request on GitHub, you need to be familiar with Git, a distributed version control system. Here's a brief explanation of each:
 - **Pull (Pull Request)**: A "pull request" is a way to propose changes to a repository. To create one, follow these steps:
 
->Fork the repository you want to contribute to on GitHub.
->Clone your forked repository to your local machine using git clone.
->Create a new branch with git checkout -b branch-name.
->Make your changes, commit them using git commit, and push the branch with git push origin branch-name.
->Go to the original repository on GitHub and create a pull request, specifying the base and compare branches.
+> - Fork the repository you want to contribute to on GitHub.
+> - Clone your forked repository to your local machine using git clone.
+> - Create a new branch with git checkout -b branch-name.
+> - Make your changes, commit them using git commit, and push the branch with git push origin branch-name.
+> - Go to the original repository on GitHub and create a pull request, specifying the base and compare branches.

@@ -7,19 +7,6 @@ addEventListener("scroll", (event) => {
     console.log('ScrollY: '+ scrollY);
 });
 
-// // hide/show header on click
-// let header = document.querySelector("header")
-// header.addEventListener("click", (event) => {
-//   console.log(header)
-//   let op = header.style.opacity
-//   if(op == "1"){
-//     header.style.opacity = "0"
-//   }else{
-//     header.style.opacity = "1"
-//   }
-// });
-
-
 // the below code can make the header disappear when user scrolls down, and reappear when user scroll up and might need the header 
 // global vars
 var lastScroll
@@ -94,22 +81,6 @@ solarButton.onclick = () =>{
 
   }
 };
-
-// JS Masonry Grid 
-
-// var elem = document.querySelector('.grid');
-// var msnry = new Masonry( elem, {
-//   // options
-//   itemSelector: '.grid-item',
-//   columnWidth: 200
-// });
-
-// // element argument can be a selector string
-// //   for an individual element
-// var msnry = new Masonry( '.grid', {
-//   // options
-// });
-
 
 $('.grid').masonry({
   itemSelector: '.grid-item',

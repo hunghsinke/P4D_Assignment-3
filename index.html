@@ -5,19 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3 - one page site</title>
-
-    <!-- <script src="../P4D_Assignment-3/JS/boulderAnimation.js" defer></script> -->
-
     <!-- run jQuery file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
     <!-- p5 JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-
-    <!-- JS slideshow--glide -->
-    <!-- <script src="JS/glide.js" defer></script>
-    <script src="JS/testing_slides.js" defer></script> -->
     
     <!-- JS Responsive menu  -->
     <script src="JS/responsive-menu.js" defer></script>
@@ -32,11 +25,6 @@
 
     <!-- css file link -->
     <link rel="stylesheet" href="CSS/index.css">
-
-
-    <!-- glide CSS  -->
-    <!-- <link rel="stylesheet" href="CSS/glide.core.css">
-    <link rel="stylesheet" href="CSS/glide.theme.css"> -->
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,10 +127,6 @@
             <div class="video-style">
                 <div class="video-bg-black"></div>
                 <h1>Welcome to Ngunnawal Country</h1>
-                <!-- <iframe class="video-bg" src="https://www.youtube.com/embed/UEAVvx_oop8?si=lGdkn7NQISkNEkmH"
-                        title="YouTube video player" frameborder="0"
-                        allow=" muted loop accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen ></iframe> -->
 
                 <video class="video-background" autoplay muted controls>
                     <!-- works on Safari -->
@@ -273,12 +257,8 @@
                             </p>
                         </span>
                         <button class="card-btn myBtn">Read More</button>
-                        <!-- onclick="myFunction()" -->
                     </div>
                 </div>
-
-                <!-- add curve -->
-
             </section>
             <section id="" class="card card-art">
                 <div class="card-body card-flex">
@@ -311,30 +291,6 @@
                 </div>
             </section>
         </section>
-
-        <!-- testing glide library  -->
-        <!-- <div class="wrap">
-            <div class="glide multi">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide">
-                            <img class="glide__slide" src="assets/img/woodprint.jpg">
-                        </li>
-                        <li class="glide__slide">
-                            <img class="glide__slide" src="assets/img/pond.jpg">
-                        </li>
-                        <li class="glide__slide">
-                            <img class="glide__slide" src="assets/img/uluru.jpg">
-                        </li>
-                    </ul>
-                </div> 
-                glid previous and next buttons -->
-        <!-- <div class="glide_arrows" data-glide-el="controls">
-                    <button class="glide__arrow  glide__arrow--left" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-                </div>
-            </div>
-        </div> -->
 
         <section id="burials">
             <!-- a combination of heading and caption to define it's style -->
@@ -774,30 +730,12 @@
     <!-- JQuery code to load the square icon and hide when the website is loaded -->
     <script>
         $(window).on("load", function () {
-            //another way to write this, easier to understand but more lines of code 
-            // $(".light").removeClass(".light").addClass(".blue").fadeOut("slow")
-            // $("body").fadeOut("slow").removeClass("blue").addClass("light").fadeIn("slow")
-            // setTimeout(function(){
-            // },2000)
 
             //easier way to write this 
             $(".load-wrapper").delay(800).fadeOut(2000, "linear")
 
         });
     </script>
-    <!-- initialize and mount a Glide  -->
-    <!-- <script>
-        const config = {
-            type: 'carousel',
-            perView: 3,
-            breakpoint: { /*for mobile device, show 2 images in perview*/
-                800: {
-                    perView: 2
-                }
-            }
-        }
-        new Glide('.glide', config).mount()
-    </script> -->
 
 </body>
 

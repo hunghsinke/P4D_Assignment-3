@@ -18,8 +18,11 @@ Additionally, Figma allows me to crop or mask images, which I use to remove any 
 ## Library:
 Mosonary- https://masonry.desandro.com/layout
 This is used for the Montage layout. 
+Masonry layouts arrange elements like a mason arranging bricks in a wall, hence the name. Unlike traditional grid layouts, where elements are placed in rows and columns, in a masonry layout, elements are stacked one below the other, and they automatically fill available horizontal space, adjusting their positions to fit the varying heights of the items. This layout is often used for creating Pinterest-style grids, image galleries, or any content where maintaining a consistent vertical rhythm is important.
 
-I have tried to use Glide JS library, but it did not provide me with enough value to keep working on it. This was originally used to do a scrolling image collage. Here is my thoughts on the experience using this library: 
+The Masonry JavaScript library is a popular choice for implementing this type of layout on web pages. It provides a simple and efficient way to achieve a masonry layout, making it easier for web developers to create visually appealing and responsive grid structures for their content.
+
+Additionally, I have tried to use Glide JS library, but it did not provide me with enough value to keep working on it. This was originally used to do a scrolling image collage. Here is my thoughts on the experience using this library: 
 
 > I initially attempted to implement a side-scrolling image feature on my website using Glide.JS, a popular JavaScript library. However, I ultimately opted not to use it due to the complexity and learning curve associated with the library. It presented a challenge that I found too time-consuming to overcome. Instead, I turned to CSS, which provided a more straightforward and familiar solution for achieving the same effect. This choice allowed me to streamline the development process and maintain greater control over the design, effectively addressing one of the obstacles I encountered in the project.
 

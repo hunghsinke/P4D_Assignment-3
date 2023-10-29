@@ -15,7 +15,7 @@ You need to include (at a minimum):
 - index.js - all javascript code used on your one page site
 - readme.md - a markdown file that contains your producer notes
 - lib/  (optional) - a folder containing any additional libraries or APIs you have used (eg: jQuery) - note the restriction above though!
-assets/ (optional) - a folder containing any assets your site needs such as images
+- assets/ (optional) - a folder containing any assets your site needs such as images
 - The optional elements really are optional.  You won't get or lose any marks by not having them or having them included; they're just there for people who might want to include images or other assets in their site.
 
 ## Assessment criteria

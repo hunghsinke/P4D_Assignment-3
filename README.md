@@ -23,19 +23,31 @@ I have tried to use Glide JS library, but it did not provide me with enough valu
 
 > I initially attempted to implement a side-scrolling image feature on my website using Glide.JS, a popular JavaScript library. However, I ultimately opted not to use it due to the complexity and learning curve associated with the library. It presented a challenge that I found too time-consuming to overcome. Instead, I turned to CSS, which provided a more straightforward and familiar solution for achieving the same effect. This choice allowed me to streamline the development process and maintain greater control over the design, effectively addressing one of the obstacles I encountered in the project.
 
+## Navigation Bar
+The navigation bar was meticulously crafted to encompass five distinct elements, each serving as a direct portal to the corresponding sections of the webpage. These navigation elements have been designed to remain affixed to the top of the page and follow the user as they scroll downward, thus ensuring seamless accessibility. In an additional layer of user-centric functionality, the navigation bar is intelligently configured to automatically disappear when the user scrolls down, enhancing the visual focus on the webpage's content. Specifically, the **"Sacred Tree"** element was designed to seamlessly guide the user to the Tree section, **"Stone Implements"** functions as a navigational link to the Stone section, and **"Aboriginal Burials"** offers direct access to the 'burial' section of the webpage. This intentional design structure, which includes the dynamic behavior of the navigation bar, ensures a user-friendly and coherent browsing experience while optimizing the visibility of essential content.
+
+
+## Burial section
+The burial section has been designed using flexbox. The container div holds all the content inside it. Inside the container div there are two divs.
+
+I also tried to us JavaScript Masonry library to do **montage** layout. However, after completing the layout using Masonry library, I find that it's very difficult to adjust each photo. Therefore, I took my professor's advice and use **Adaptive Photo Layout with Flexbox**. I successfully developed the montage layout using Flexbox and you can see the beautiful layout in my program.  
+
 ## Connect with Us page:
 If you hover over the "Connect now" button, you will find the button will change to light green. When you click on the button, you will see it changed to a darker green. I chose three different green for this button. 
-
 
 ## Image use:
 The image for the welcome message and about this website is from the Australian Institute of Aboriginal and Torres Strait islander Studies (AIATSIS). 
 
 Most of the images for the burial section is from this [website](https://www.ngunnawal.org/gallery).
 
-## Burial section
-The burial section has been designed using flexbox. The container div holds all the content inside it. Inside the container div there are two divs.
 
-I also tried to us JavaScript Masonry library to do **montage** layout. However, after completing the layout using Masonry library, I find that it's very difficult to adjust each photo. Therefore, I took my professor's advice and use **Adaptive Photo Layout with Flexbox**. I successfully developed the montage layout using Flexbox and you can see the beautiful layout in my program.  
+## Sources
+
+## Improvements
+As I reflect on the ongoing development of the website, I recognise that the next phase is to dedicated focus on enhancing its responsiveness. While I did make an initial attempt to address this aspect, I've come to appreciate the intricacies and challenges involved in achieving optimal responsiveness. Consequently, I've chosen to defer this task for the time being, recognising the importance of careful consideration and planning in order to effectively optimise the website's performance on various devices and screen sizes. This decision underscores my commitment to a thoughtful and deliberate approach to web development.
+> 1. The website could be improved by adding more content to each section, such as a brief description about the history and significance of the place.
+> 2. The website should be mobile responsive to different screen sizes and devices. This can be achieved by using CSS media queries or frameworks like Bootstrap. 
+
 
 ## Git pull and merge request
 Through the process I also learn to use Git pull, push and merge request. To perform actions like pulling, pushing, and creating a merge request on GitHub, you need to be familiar with Git, a distributed version control system. Here's a brief explanation of each:
@@ -58,14 +70,6 @@ Through the process I also learn to use Git pull, push and merge request. To per
 > - Review your code and discuss any necessary changes.
 > - Once satisfied, they will merge the pull request.
 > - The changes are now incorporated into the original repository.
-
-## Navigation Bar
-The navigation bar was meticulously crafted to encompass five distinct elements, each serving as a direct portal to the corresponding sections of the webpage. These navigation elements have been designed to remain affixed to the top of the page and follow the user as they scroll downward, thus ensuring seamless accessibility. In an additional layer of user-centric functionality, the navigation bar is intelligently configured to automatically disappear when the user scrolls down, enhancing the visual focus on the webpage's content. Specifically, the **"Sacred Tree"** element was designed to seamlessly guide the user to the Tree section, **"Stone Implements"** functions as a navigational link to the Stone section, and **"Aboriginal Burials"** offers direct access to the 'burial' section of the webpage. This intentional design structure, which includes the dynamic behavior of the navigation bar, ensures a user-friendly and coherent browsing experience while optimizing the visibility of essential content.
-
-## Sources
-
-## Improvements
-As I reflect on the ongoing development of the website, I recognise that the next phase is to dedicated focus on enhancing its responsiveness. While I did make an initial attempt to address this aspect, I've come to appreciate the intricacies and challenges involved in achieving optimal responsiveness. Consequently, I've chosen to defer this task for the time being, recognising the importance of careful consideration and planning in order to effectively optimise the website's performance on various devices and screen sizes. This decision underscores my commitment to a thoughtful and deliberate approach to web development.
 
 
 ## Assignment task explained

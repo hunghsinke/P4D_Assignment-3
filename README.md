@@ -94,5 +94,6 @@ Additionally, Figma allows me to crop or mask images, which I use to remove any 
 
 ![alt text](https://github.com/hunghsinke/P4D_Assignment-3/blob/main/assets/img/colour-theme.png)
 
-
+## Improvements
+As I reflect on the ongoing development of the website, I recognise that the next phase is to dedicated focus on enhancing its responsiveness. While I did make an initial attempt to address this aspect, I've come to appreciate the intricacies and challenges involved in achieving optimal responsiveness. Consequently, I've chosen to defer this task for the time being, recognising the importance of careful consideration and planning in order to effectively optimise the website's performance on various devices and screen sizes. This decision underscores my commitment to a thoughtful and deliberate approach to web development.
 

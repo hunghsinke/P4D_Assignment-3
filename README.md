@@ -42,6 +42,27 @@ Most of the images for the burial section is from this [website](https://www.ngu
 
 
 ## Sources
+- [Responsive Top Navigation](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) - I use this for the responsive navigation bar. 
+- [Read More Read Less Button](https://www.w3schools.com/howto/howto_js_read_more.asp) - I use this for the read more and read less button. I edited the code with JavaScript and change IDs to class to accommodate to the algorithm. 
+- [Adaptive Photo Layout with Flexbox ](https://css-tricks.com/adaptive-photo-layout-with-flexbox/) - I use this for the Montage feel similar to Pinterest using Flexbox CSS.
+- [Indigenous information](https://www.firstpeoplesrelations.vic.gov.au/fact-sheet-aboriginal-burials) - I use this for the Indigenous information on the website. 
+- [Ordered and Unordered list](https://www.w3schools.com/html/html_lists.asp)- I use this for the ordered and unordered list. 
+- [top / bottom / left / right](https://css-tricks.com/almanac/properties/t/top-right-bottom-left/) - Learning about top / bottom / left / right in CSS properties. 
+- [Background Image](https://www.youtube.com/watch?v=zHZRFwWQt2w)- I use this tutorial to learn about the background images use on the website. 
+- [Image](https://trove.nla.gov.au/search/advanced/category/images?keyword=ngunnawal&startPos=40)- I use this to find Indigenous images. 
+- [Powerhouse](https://powerhouse.com.au/first-nations)- I use this to find Indigenous images. 
+- [NGA](https://nga.gov.au/search-results/?query=ngunnawal&page=4)- I use this to find Indigenous images. 
+- [NMA](https://www.nma.gov.au/exhibitions/first-australians)- I use this to find Indigenous images. 
+- [NGUNNAWAL](https://www.ngunnawal.org/gallery)- I use this to find Indigenous images. 
+- [AIATSIS](https://aiatsis.gov.au/explore/welcome-country)I use this to find Indigenous background videos. 
+- [Engaging with
+Traditional Owners](https://aiatsis.gov.au/sites/default/files/2021-05/engagingwithtraditionalowners.pdf)- I use this for Indigenous pattern. 
+- [How to make a box semi-transparent](https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Make_box_transparent)- I use this for semi-transparent box.
+- [How TO - Lightbox](https://www.w3schools.com/howto/howto_js_lightbox.asp)- I use this for lightbox effect on the burials section. 
+- [Masonry layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout)- I use this for Masonry layout. 
+- [Align Images Side By Side](https://www.w3schools.com/howto/howto_css_images_side_by_side.asp)- I use this to align image in the stone section. 
+- [Home page image](https://www.pexels.com/search/brindabella/)- I use this for home page image. 
+- [Image styling](https://www.w3schools.com/css/css3_images.asp)- I use this for image styling in the stone section. 
 
 ## Improvements
 As I reflect on the ongoing development of the website, I recognise that the next phase is to dedicated focus on enhancing its responsiveness. While I did make an initial attempt to address this aspect, I've come to appreciate the intricacies and challenges involved in achieving optimal responsiveness. Consequently, I've chosen to defer this task for the time being, recognising the importance of careful consideration and planning in order to effectively optimise the website's performance on various devices and screen sizes. This decision underscores my commitment to a thoughtful and deliberate approach to web development.

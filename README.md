@@ -65,3 +65,10 @@ Through the process I also learn to use Git pull, push and merge request. To per
 > - Create a new branch with git checkout **'-b branch-name'**.
 > - Make your changes, commit them using **'git commit'**, and push the branch with **'git push'** origin **'branch-name'**.
 > - Go to the original repository on GitHub and create a pull request, specifying the base and compare branches.
+
+- **Push**: To push your changes to a remote repository (like on GitHub), follow these steps:
+
+> - Commit your changes locally using git commit.
+> - Push the changes to the remote repository using git push origin branch-name.
+> - If you're pushing to the main branch, you might not need to specify the branch name (e.g., git push origin main).
+

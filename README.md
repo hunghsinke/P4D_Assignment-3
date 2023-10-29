@@ -36,7 +36,21 @@ Additional marks will count towards higher grades (credit, distinction, high dis
 - engagement with topic - demonstrating additional research around the topic that gives your site additional depth and interest
 self-reflection - how much insight your readme.md file and code comments provide into your production processes, understanding and approach to the assignment.  What we're looking for here is your ability to look at your own work critically; to recognise the things you did well and the things that you could have possibly improved.
 
-## What library I use:
+## Design concepts
+In my quest to design a website inspired by Aboriginal culture in the ACT, I embarked on a thoughtful research journey. I delved into Pinterest and explored various websites dedicated to this cultural heritage. Through this exploration, a recurring color scheme of green and brown emerged as a prevalent and culturally resonant choice. To ensure the authenticity of my design, I sourced numerous projects and eventually stumbled upon a project on GitHub that brilliantly utilised this same color palette. Leveraging Figma, I meticulously sought out the exact hex codes that matched the colors from this project, aiming to infuse my website with a genuine and respectful representation of Aboriginal culture in the ACT. This meticulous approach underscored my commitment to a thoughtful and culturally sensitive design process.
+
+I use Figma to create and refine the color theme of my website. I start by selecting a color palette that complements my website's branding and style. Figma's color picker and swatch system make it easy to experiment with different color combinations. I also use Figma to apply these colors consistently across various design elements, ensuring a cohesive and visually appealing look. 
+
+Additionally, Figma allows me to crop or mask images, which I use to remove any unwanted white side bars from images I include in my website. This helps maintain a clean and uniform appearance in my web design, all within the same tool.
+
+- Pinterest colour suggestion:
+![alt text](https://github.com/hunghsinke/P4D_Assignment-3/blob/main/assets/img/pinterest.png)
+
+- Website source [here](https://phillip-chen.netlify.app/case-study-assets/ui-prototype-projects/map-prototype/)
+
+![alt text](https://github.com/hunghsinke/P4D_Assignment-3/blob/main/assets/img/colour-theme.png)
+
+## Library:
 Mosonary- https://masonry.desandro.com/layout
 This is used for the Montage layout. 
 
@@ -80,19 +94,6 @@ Through the process I also learn to use Git pull, push and merge request. To per
 > - Once satisfied, they will merge the pull request.
 > - The changes are now incorporated into the original repository.
 
-## Design concepts
-In my quest to design a website inspired by Aboriginal culture in the ACT, I embarked on a thoughtful research journey. I delved into Pinterest and explored various websites dedicated to this cultural heritage. Through this exploration, a recurring color scheme of green and brown emerged as a prevalent and culturally resonant choice. To ensure the authenticity of my design, I sourced numerous projects and eventually stumbled upon a project on GitHub that brilliantly utilised this same color palette. Leveraging Figma, I meticulously sought out the exact hex codes that matched the colors from this project, aiming to infuse my website with a genuine and respectful representation of Aboriginal culture in the ACT. This meticulous approach underscored my commitment to a thoughtful and culturally sensitive design process.
-
-I use Figma to create and refine the color theme of my website. I start by selecting a color palette that complements my website's branding and style. Figma's color picker and swatch system make it easy to experiment with different color combinations. I also use Figma to apply these colors consistently across various design elements, ensuring a cohesive and visually appealing look. 
-
-Additionally, Figma allows me to crop or mask images, which I use to remove any unwanted white side bars from images I include in my website. This helps maintain a clean and uniform appearance in my web design, all within the same tool.
-
-- Pinterest colour suggestion:
-![alt text](https://github.com/hunghsinke/P4D_Assignment-3/blob/main/assets/img/pinterest.png)
-
-- Website source [here](https://phillip-chen.netlify.app/case-study-assets/ui-prototype-projects/map-prototype/)
-
-![alt text](https://github.com/hunghsinke/P4D_Assignment-3/blob/main/assets/img/colour-theme.png)
 
 ## Improvements
 As I reflect on the ongoing development of the website, I recognise that the next phase is to dedicated focus on enhancing its responsiveness. While I did make an initial attempt to address this aspect, I've come to appreciate the intricacies and challenges involved in achieving optimal responsiveness. Consequently, I've chosen to defer this task for the time being, recognising the importance of careful consideration and planning in order to effectively optimise the website's performance on various devices and screen sizes. This decision underscores my commitment to a thoughtful and deliberate approach to web development.

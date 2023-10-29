@@ -40,7 +40,7 @@ self-reflection - how much insight your readme.md file and code comments provide
 Mosonary- https://masonry.desandro.com/layout
 This is used for the picture layout. 
 
-I have tried to use Glide JS library, but it did not provide me with enough value to keep working on it. This was originally used to do a scrolling image collage. 
+I have tried to use Glide JS library, but it did not provide me with enough value to keep working on it. This was originally used to do a scrolling image collage. Here is my thoughts on the experience using this library: 
 
 > I initially attempted to implement a side-scrolling image feature on my website using Glide.JS, a popular JavaScript library. However, I ultimately opted not to use it due to the complexity and learning curve associated with the library. It presented a challenge that I found too time-consuming to overcome. Instead, I turned to CSS, which provided a more straightforward and familiar solution for achieving the same effect. This choice allowed me to streamline the development process and maintain greater control over the design, effectively addressing one of the obstacles I encountered in the project.
 

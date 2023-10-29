@@ -72,3 +72,9 @@ Through the process I also learn to use Git pull, push and merge request. To per
 > - Push the changes to the remote repository using git push origin branch-name.
 > - If you're pushing to the main branch, you might not need to specify the branch name (e.g., git push origin main).
 
+- **Merge Request (or Pull Request)**: Once you've pushed your changes and created a pull request, someone with write access to the repository can review and merge your changes. They will:
+
+> - Review your code and discuss any necessary changes.
+> - Once satisfied, they will merge the pull request.
+> - The changes are now incorporated into the original repository.
+

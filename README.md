@@ -50,3 +50,8 @@ If you hover over the "Connect now" button, you will find the button will change
 The image for the welcome message and about this website is from the Australian Institute of Aboriginal and Torres Strait islander Studies (AIATSIS). 
 
 Most of the images for the burial section is from this [website](https://www.ngunnawal.org/gallery).
+
+## Burial section
+The burial section has been designed using flexbox. The container div holds all the content inside it. Inside the container div there are two divs.
+
+I also tried to us JavaScript Masonry library to do **montage** layout. However, after completing the layout using Masonry library, I find that it's very difficult to adjust each photo. Therefore, I took my professor's advice and use **Adaptive Photo Layout with Flexbox**. I successfully developed the montage layout using Flexbox and you can see the beautiful layout in my program.  

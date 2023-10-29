@@ -73,8 +73,8 @@ Traditional Owners](https://aiatsis.gov.au/sites/default/files/2021-05/engagingw
 - [Museum website](https://www.vandelaydesign.com/museum-websites/) - I look for inspiration from different museum websites. 
 ## Improvements
 As I reflect on the ongoing development of the website, I recognise that the next phase is to dedicated focus on enhancing its responsiveness. While I did make an initial attempt to address this aspect, I've come to appreciate the intricacies and challenges involved in achieving optimal responsiveness. Consequently, I've chosen to defer this task for the time being, recognising the importance of careful consideration and planning in order to effectively optimise the website's performance on various devices and screen sizes. This decision underscores my commitment to a thoughtful and deliberate approach to web development.
-> 1. The website could be improved by adding more content to each section, such as a brief description about the history and significance of the place.
-> 2. The website should be mobile responsive to different screen sizes and devices. This can be achieved by using CSS media queries or frameworks like Bootstrap. 
+> - The website could be improved by adding more content to each section, such as a brief description about the history and significance of the place.
+> - The website should be mobile responsive to different screen sizes and devices. This can be achieved by using CSS media queries or frameworks like Bootstrap. 
 
 
 ## Git pull and merge request

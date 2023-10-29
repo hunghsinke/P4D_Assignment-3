@@ -55,3 +55,13 @@ Most of the images for the burial section is from this [website](https://www.ngu
 The burial section has been designed using flexbox. The container div holds all the content inside it. Inside the container div there are two divs.
 
 I also tried to us JavaScript Masonry library to do **montage** layout. However, after completing the layout using Masonry library, I find that it's very difficult to adjust each photo. Therefore, I took my professor's advice and use **Adaptive Photo Layout with Flexbox**. I successfully developed the montage layout using Flexbox and you can see the beautiful layout in my program.  
+
+## Git pull and merge request
+Through the process I also learn to use Git pull, push and merge request. To perform actions like pulling, pushing, and creating a merge request on GitHub, you need to be familiar with Git, a distributed version control system. Here's a brief explanation of each:
+- **Pull (Pull Request)**: A "pull request" is a way to propose changes to a repository. To create one, follow these steps:
+
+>Fork the repository you want to contribute to on GitHub.
+>Clone your forked repository to your local machine using git clone.
+>Create a new branch with git checkout -b branch-name.
+>Make your changes, commit them using git commit, and push the branch with git push origin branch-name.
+>Go to the original repository on GitHub and create a pull request, specifying the base and compare branches.

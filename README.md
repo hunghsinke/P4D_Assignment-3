@@ -38,7 +38,7 @@ self-reflection - how much insight your readme.md file and code comments provide
 
 ## What library I use:
 Mosonary- https://masonry.desandro.com/layout
-This is used for the picture layout. 
+This is used for the Montage layout. 
 
 I have tried to use Glide JS library, but it did not provide me with enough value to keep working on it. This was originally used to do a scrolling image collage. Here is my thoughts on the experience using this library: 
 
@@ -84,3 +84,5 @@ Through the process I also learn to use Git pull, push and merge request. To per
 I use Figma to create and refine the color theme of my website. I start by selecting a color palette that complements my website's branding and style. Figma's color picker and swatch system make it easy to experiment with different color combinations. I also use Figma to apply these colors consistently across various design elements, ensuring a cohesive and visually appealing look. 
 
 Additionally, Figma allows me to crop or mask images, which I use to remove any unwanted white side bars from images I include in my website. This helps maintain a clean and uniform appearance in my web design, all within the same tool.
+
+![alt text]

@@ -35,7 +35,7 @@ I am really proud of this section. The burial section has been designed using fl
 I also tried to us JavaScript Masonry library to do **montage** layout. However, after completing the layout using Masonry library, I find that it's very difficult to adjust each photo. Therefore, I took my professor's advice and use **Adaptive Photo Layout with Flexbox**. I successfully developed the montage layout using Flexbox and you can see the beautiful layout in my program.  
 
 ## Connect with Us page:
-If you hover over the "Connect now" button, you will find the button will change to light green. When you click on the button, you will see it changed to a darker green. I chose three different green for this button. 
+I carefully designed the "Connect now" button to change colors as you interact with it. When you hover your mouse over the button, it turns a lighter shade of green, and when you click on it, it becomes a darker green. I intentionally used three different shades of green to make the button more visually appealing.
 
 ## Image use:
 The image for the welcome message and about this website is from the Australian Institute of Aboriginal and Torres Strait islander Studies (AIATSIS). 

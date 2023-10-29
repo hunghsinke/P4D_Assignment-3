@@ -26,6 +26,9 @@ I have tried to use Glide JS library, but it did not provide me with enough valu
 ## Navigation Bar
 The navigation bar was meticulously crafted to encompass five distinct elements, each serving as a direct portal to the corresponding sections of the webpage. These navigation elements have been designed to remain affixed to the top of the page and follow the user as they scroll downward, thus ensuring seamless accessibility. In an additional layer of user-centric functionality, the navigation bar is intelligently configured to automatically disappear when the user scrolls down, enhancing the visual focus on the webpage's content. Specifically, the **"Sacred Tree"** element was designed to seamlessly guide the user to the Tree section, **"Stone Implements"** functions as a navigational link to the Stone section, and **"Aboriginal Burials"** offers direct access to the 'burial' section of the webpage. This intentional design structure, which includes the dynamic behavior of the navigation bar, ensures a user-friendly and coherent browsing experience while optimizing the visibility of essential content.
 
+## Stone section 
+In this section I use image overlay from the [CSS style](https://www.w3schools.com/css/css3_images.asp). This creates an appealing visual effect for the user when the hover their mouse over. It also has a button that disaplys more information if the user requires. I am truly happy that I was able to develop this part of the program and include that in my submission. 
+
 ## Burial section
 I am really proud of this section. The burial section has been designed using flexbox. The user can click on the image and will be taken into lightbox to show user all the images. I spent a lot of effort and time into this experiementing different JS libraries and ultimately decided to us CSS lightbox for the perfect effect. 
 
